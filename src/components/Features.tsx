@@ -3,14 +3,14 @@ import { CheckCircle } from 'lucide-react';
 
 const Features: React.FC = () => {
     const features = [
-        "Intelligent Upsell Engine",
+        "Automated Upsells at Every Table",
+        "High-Margin Item Promotion",
+        "Guest Preference Insights",
+        "Zero Hardware Required",
+        "Works With Your Existing Operations",
         "WhatsApp Order Notifications",
-        "Real-Time Analytics Dashboard",
-        "Multi-Table QR System",
-        "Behavioral Learning",
-        "Menu Management",
-        "Inventory Sync",
-        "Customer Feedback Loop"
+        "Real-Time Revenue Dashboard",
+        "Multi-Table QR System"
     ];
 
     return (
@@ -19,10 +19,10 @@ const Features: React.FC = () => {
                 <div className="lg:text-center">
                     <h2 className="text-base text-dark-brown font-semibold tracking-wide uppercase">Features</h2>
                     <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                        Everything You Need to Scale
+                        Built for Operators Who Care About Revenue
                     </p>
                     <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                        Powerful features designed to simplify operations and maximize profit.
+                        Everything you need to increase average order value — nothing you don't.
                     </p>
                 </div>
 

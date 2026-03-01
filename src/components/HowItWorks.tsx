@@ -7,20 +7,20 @@ const steps = [
     {
         icon: <QrCode className="w-8 h-8 text-primary" />,
         step: "Step 01",
-        title: "Customer Scans QR",
-        description: "Guests scan the code at their table to access the digital menu instantly. No app download required."
+        title: "Guest Scans QR",
+        description: "Instant access to your digital menu. No app download. No friction. Every table is ready to order in seconds."
     },
     {
         icon: <Sparkles className="w-8 h-8 text-primary" />,
         step: "Step 02",
-        title: "Hyper Personalised Recommendation AI Agent",
-        description: "An intelligent engine that silently learns and adapts to every guest, delivering bespoke recommendations that feel like magic, subtly elevating the dining experience and your bottom line."
+        title: "Automatic High-Margin Recommendations",
+        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context — powered by adaptive recommendation logic."
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-primary" />,
         step: "Step 03",
-        title: "Watch Revenue Grow",
-        description: "You see higher check averages and automated upsells without training your staff."
+        title: "Average Bill Size Increases",
+        description: "Each table generates more revenue automatically, without extra staff training or operational changes."
     }
 ];
 
@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
                     How It Works
                 </h2>
                 <p className="text-xl text-text">
-                    Three simple steps to automate your upselling and increase profits.
+                    Three steps. Zero training. Measurable revenue lift from day one.
                 </p>
             </div>
 

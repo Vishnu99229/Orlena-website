@@ -6,18 +6,18 @@ import { BrainCircuit, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
 const features = [
     {
         icon: <BrainCircuit className="w-6 h-6" />,
-        title: "Understands Behavior",
-        description: "AI analyzes ordering patterns to know exactly what customers are likely to want next."
+        title: "Guest Preference Insights",
+        description: "Tracks ordering patterns across tables and time slots to surface what guests actually want next."
     },
     {
         icon: <TrendingUp className="w-6 h-6" />,
-        title: "Smart Upselling",
-        description: "Automatically suggests high-margin add-ons like sides, drinks, and desserts at the perfect time."
+        title: "High-Margin Item Promotion",
+        description: "Automatically promotes your most profitable sides, drinks, and desserts at the right moment in the ordering flow."
     },
     {
         icon: <Sparkles className="w-6 h-6" />,
-        title: "Continuous Learning",
-        description: "The more customers order, the smarter the system gets, improving recommendations daily."
+        title: "Adapts With Every Order",
+        description: "Powered by adaptive recommendation logic that learns from guest behavior — improving results daily without manual input."
     },
 ];
 
@@ -29,16 +29,16 @@ export const Solution: React.FC = () => {
                 <div>
                     <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
                         <Sparkles size={14} />
-                        <span>AI-Driven Intelligence</span>
+                        <span>Revenue Optimization</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        AI That Learns From <br />
-                        <span className="text-primary">Every Order.</span>
+                        A System That Sells <br />
+                        <span className="text-primary">For You. Every Table.</span>
                     </h2>
 
                     <p className="text-xl text-text mb-8 leading-relaxed">
-                        Stop leaving money on the table. Our AI engine works 24/7 to analyze preferences and suggest the perfect add-ons to increase your average order value.
+                        If your cafe serves 80 tables a day and increases average order value by just ₹60, that’s over ₹1.4 lakh in additional monthly revenue — with zero extra staff effort.
                     </p>
 
                     <div className="space-y-6">
@@ -80,7 +80,7 @@ export const Solution: React.FC = () => {
                             </div>
                             <ArrowRight className="text-gray-300" />
                             <div className="text-right">
-                                <p className="text-sm text-primary font-bold mb-1">AI Suggests</p>
+                                <p className="text-sm text-primary font-bold mb-1">Orlena Suggests</p>
                                 <h4 className="text-xl font-bold">Chocolate Brownie</h4>
                                 <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">+90% Match</span>
                             </div>
@@ -93,7 +93,7 @@ export const Solution: React.FC = () => {
                             </div>
                             <ArrowRight className="text-gray-300" />
                             <div className="text-right">
-                                <p className="text-sm text-primary font-bold mb-1">AI Suggests</p>
+                                <p className="text-sm text-primary font-bold mb-1">Orlena Suggests</p>
                                 <h4 className="text-xl font-bold">Garlic Bread & Mocktail</h4>
                                 <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">+95% Match</span>
                             </div>

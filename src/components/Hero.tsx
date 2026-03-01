@@ -20,24 +20,24 @@ export const Hero: React.FC = () => {
                 >
                     <div className="inline-flex items-center space-x-2 bg-orange-50 text-primary px-3 py-1 rounded-full text-sm font-medium mb-6 border border-orange-100">
                         <span className="flex h-1.5 w-1.5 rounded-full bg-primary"></span>
-                        <span>Intelligent Hospitality Platform</span>
+                        <span>Revenue Intelligence for Cafes</span>
                     </div>
 
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                        A Menu That Understands <br />
-                        <span className="text-gradient">Your Guests.</span>
+                        Increase Average Order Value <br />
+                        <span className="text-gradient">Without Training Your Staff.</span>
                     </h1>
 
                     <p className="text-xl text-text mb-8 max-w-lg leading-relaxed">
-                        Intelligent dining experiences that learn each guest’s preferences and gently guide them toward thoughtful additions, elevating every table at scale.
+                        Orlena transforms your QR menu into a revenue engine that automatically recommends high-margin items at the right moment — no extra staff effort required.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Button size="lg" rightIcon={<ArrowRight size={20} />} href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" target="_blank">
-                            Book a Private Demo
+                            Book a Demo
                         </Button>
                         <Button size="lg" variant="outline">
-                            Discover Orlena
+                            See How It Works
                         </Button>
                     </div>
 

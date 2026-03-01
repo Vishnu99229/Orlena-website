@@ -7,51 +7,51 @@ import { motion } from 'framer-motion';
 export const Pricing: React.FC = () => {
     const plans = [
         {
-            name: "Smart Ordering",
+            name: "Starter",
             price: "$120",
-            description: "Core positioning: AI powered ordering + recommendations.",
+            description: "Automated upsells and digital ordering for growing cafes.",
             features: [
-                "QR based digital ordering system",
-                "AI powered product recommendations",
-                "Upsell and cross sell automation",
-                "Real time order analytics dashboard"
+                "QR-based digital ordering system",
+                "Automated upsell recommendations",
+                "High-margin item promotion",
+                "Real-time revenue dashboard"
             ],
             isPopular: false
         },
         {
-            name: "Intelligent Growth",
+            name: "Growth",
             price: "$215",
-            description: "This package includes everything in Smart Ordering plus advanced intelligence.",
+            description: "Everything in Starter, plus adaptive logic that improves with every order.",
             features: [
-                "Everything in Smart Ordering",
-                "Hyper personalised AI recommendations",
-                "AI thinking engine that adapts to customer behavior",
-                "Revenue optimization insights and smart nudges"
+                "Everything in Starter",
+                "Adaptive recommendation logic",
+                "Guest preference insights",
+                "Revenue optimization nudges"
             ],
             isPopular: true
         },
         {
-            name: "Your Full Butler",
+            name: "Enterprise",
             price: "$360",
-            description: "Premium positioning. This is the complete AI agent layer.",
+            description: "Full-scale revenue automation for multi-location operators.",
             features: [
-                "Everything in Intelligent Growth",
-                "Fully autonomous AI ordering assistant",
-                "Customer memory and repeat behavior learning",
-                "Dynamic pricing, upsell logic, and predictive engagement"
+                "Everything in Growth",
+                "Guest memory and repeat visit tracking",
+                "Dynamic pricing and promotion logic",
+                "Dedicated account manager"
             ],
             isPopular: false
         }
     ];
 
     return (
-        <Section background="white" className="relative">
+        <Section id="pricing" background="white" className="relative">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6 text-stone-900">
-                    Pricing That <span className="text-primary text-gradient">Scales With You.</span>
+                    Pricing That <span className="text-primary text-gradient">Pays for Itself.</span>
                 </h2>
                 <p className="text-xl text-stone-600">
-                    Choose the intelligence tier that fits your establishment.
+                    Choose the plan that fits your operation. Every tier increases your average order value.
                 </p>
             </div>
 

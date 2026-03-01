@@ -8,11 +8,11 @@ export const DemoCta: React.FC = () => {
         <Section background="dark" className="text-center">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
-                    See How AI Can <br />
-                    <span className="text-primary">Increase Your Revenue.</span>
+                    Start Increasing Revenue <br />
+                    <span className="text-primary">This Week.</span>
                 </h2>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                    Join the restaurants that are automating their upselling today. No setup fees. No risk.
+                    Join the cafes and restaurants already growing their average order value with Orlena. No setup fees. No risk.
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4">

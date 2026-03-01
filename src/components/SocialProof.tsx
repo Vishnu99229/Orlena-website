@@ -6,19 +6,19 @@ const testimonials = [
     {
         name: "Ebin Thomas",
         role: "CEO, Cafe Muziris (Indiranagar, Bangalore)",
-        content: "Orlena elevated our guest experience perfectly. The subtle, personalized suggestions flow naturally with our premium service, while noticeably increasing our revenue.",
+        content: "Our average order value went up within the first week. Orlena quietly promotes our high-margin items without changing how our staff operates. It just works.",
         image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
         name: "Arjun Nair",
         role: "Founder, BrewVerve (Kochi)",
-        content: "What impressed me most is how elegant the dining feel remains. It's smart hospitality that anticipates guest needs, resulting in better service and higher average order values.",
+        content: "We were leaving money on the table at every single table. Orlena fixed that — automated upsells, zero friction, and our guests actually appreciate the suggestions.",
         image: "https://randomuser.me/api/portraits/men/44.jpg"
     },
     {
         name: "Raghav Reddy",
         role: "Owner, Saffron Yard (Hyderabad)",
-        content: "It effortlessly bridges the gap between digital convenience and premium dining. Our guests love the thoughtful additions, and we love the effortless revenue growth.",
+        content: "No hardware to install, no staff to train. We saw measurable revenue lift in the first month — Orlena pays for itself many times over.",
         image: "https://randomuser.me/api/portraits/men/86.jpg"
     }
 ];
@@ -28,10 +28,10 @@ export const SocialProof: React.FC = () => {
         <Section background="beige">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Trusted by Growing Cafes & Restaurants
+                    Operators Who Increased Revenue With Orlena
                 </h2>
                 <p className="text-text text-lg">
-                    Join hundreds of owners who are automating their revenue growth.
+                    Cafe and restaurant owners across India are seeing measurable results.
                 </p>
             </div>
 

@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                             Orlena
                         </a>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                            AI-powered QR ordering that learns, suggests, and upsells automatically to boost your revenue.
+                            Intelligent QR menus that increase your average order value — automatically, at every table.
                         </p>
                         <div className="flex space-x-4">
                             <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -63,8 +63,8 @@ export const Footer: React.FC = () => {
                 <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                     <p>© {new Date().getFullYear()} Orlena. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white">Privacy Policy</a>
-                        <a href="#" className="hover:text-white">Terms of Service</a>
+                        <a href="/privacy" className="hover:text-white">Privacy Policy</a>
+                        <a href="/terms" className="hover:text-white">Terms of Service</a>
                     </div>
                 </div>
             </div>

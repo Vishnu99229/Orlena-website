@@ -9,9 +9,19 @@ import { Pricing } from './components/Pricing';
 import { DemoCta } from './components/DemoCta';
 import { Footer } from './components/Footer';
 import { Integrations } from './components/Integrations';
+import { TermsOfService } from './components/TermsOfService';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 
 function App() {
   const path = window.location.pathname;
+
+  if (path === '/terms' || path === '/terms/') {
+    return <TermsOfService />;
+  }
+
+  if (path === '/privacy' || path === '/privacy/') {
+    return <PrivacyPolicy />;
+  }
 
   if (path === '/integrations' || path === '/integrations/') {
     return <Integrations />;
