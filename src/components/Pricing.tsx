@@ -8,7 +8,7 @@ export const Pricing: React.FC = () => {
     const plans = [
         {
             name: "Starter",
-            price: "$120",
+            price: "$200",
             description: "Automated upsells and digital ordering for growing cafes.",
             features: [
                 "QR-based digital ordering system",
@@ -20,7 +20,7 @@ export const Pricing: React.FC = () => {
         },
         {
             name: "Growth",
-            price: "$215",
+            price: "$400",
             description: "Everything in Starter, plus adaptive logic that improves with every order.",
             features: [
                 "Everything in Starter",
@@ -32,7 +32,7 @@ export const Pricing: React.FC = () => {
         },
         {
             name: "Enterprise",
-            price: "$360",
+            price: "Custom Pricing",
             description: "Full-scale revenue automation for multi-location operators.",
             features: [
                 "Everything in Growth",
@@ -86,7 +86,7 @@ export const Pricing: React.FC = () => {
                                 target="_blank"
                                 variant={plan.isPopular ? 'primary' : 'outline'}
                             >
-                                {plan.price} <span className="text-sm font-normal ml-1 opacity-80">/mo</span>
+                                {plan.price} {plan.price !== "Custom Pricing" && <span className="text-sm font-normal ml-1 opacity-80">/mo</span>}
                             </Button>
                         </div>
 
