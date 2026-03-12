@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hello.orlena.talk/sitemap.xml
