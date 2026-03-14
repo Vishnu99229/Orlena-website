@@ -6,18 +6,18 @@ import { BrainCircuit, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
 const features = [
     {
         icon: <BrainCircuit className="w-6 h-6" />,
-        title: "Guest Preference Insights",
-        description: "Tracks ordering patterns across tables and time slots to surface what guests actually want next."
+        title: "AI-Powered QR Menu Insights",
+        description: "Our AI-powered QR menu tracks ordering patterns across tables and time slots to surface what guests actually want next, capturing every upsell opportunity."
     },
     {
         icon: <TrendingUp className="w-6 h-6" />,
-        title: "High-Margin Item Promotion",
-        description: "Automatically promotes your most profitable sides, drinks, and desserts at the right moment in the ordering flow."
+        title: "High-Margin Item Promotion Restaurant Ready",
+        description: "Achieve high-margin item promotion restaurant wide by automatically promoting your most profitable sides, drinks, and desserts at the exact right moment."
     },
     {
         icon: <Sparkles className="w-6 h-6" />,
-        title: "Adapts With Every Order",
-        description: "Powered by adaptive recommendation logic that learns from guest behavior — improving results daily without manual input."
+        title: "Automated Restaurant Upselling Adapts",
+        description: "Powered by smart logic, this automated restaurant upselling learns from guest behavior — improving results daily without any manual input."
     },
 ];
 
@@ -29,16 +29,16 @@ export const Solution: React.FC = () => {
                 <div>
                     <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
                         <Sparkles size={14} />
-                        <span>Revenue Optimization</span>
+                        <span>AI-Powered QR Menu</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        A System That Sells <br />
-                        <span className="text-primary">For You. Every Table.</span>
+                        A System Designed To <br />
+                        <span className="text-primary">Increase Average Bill Size Café & Restaurant Wide.</span>
                     </h2>
 
                     <p className="text-xl text-text mb-8 leading-relaxed">
-                        If your cafe serves 80 tables a day and increases average order value by just ₹60, that’s over ₹1.4 lakh in additional monthly revenue — with zero extra staff effort.
+                        If your venue serves 80 tables a day and uses our digital menu upsell to add just ₹60 per order, that’s over ₹1.4 lakh in additional monthly revenue — with zero extra staff effort.
                     </p>
 
                     <div className="space-y-6">

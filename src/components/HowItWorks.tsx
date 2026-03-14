@@ -7,20 +7,20 @@ const steps = [
     {
         icon: <QrCode className="w-8 h-8 text-primary" />,
         step: "Step 01",
-        title: "Guest Scans QR",
-        description: "Instant access to your digital menu. No app download. No friction. Every table is ready to order in seconds."
+        title: "Guest Scans QR Code Menu For Restaurants",
+        description: "Instant access to your digital menu. No app download. No friction. The best restaurant ordering system ensures every table is ready to order in seconds."
     },
     {
         icon: <Sparkles className="w-8 h-8 text-primary" />,
         step: "Step 02",
-        title: "Automatic High-Margin Recommendations",
-        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context — powered by adaptive recommendation logic."
+        title: "Automated Restaurant Upselling",
+        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context — powering an AI-powered QR menu experience."
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-primary" />,
         step: "Step 03",
-        title: "Average Bill Size Increases",
-        description: "Each table generates more revenue automatically, without extra staff training or operational changes."
+        title: "Café Revenue Increase Achieved",
+        description: "Each table generates more revenue automatically, ensuring a steady café revenue increase without extra staff training or operational changes."
     }
 ];
 
@@ -29,10 +29,10 @@ export const HowItWorks: React.FC = () => {
         <Section background="beige" id="how-it-works">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    How It Works
+                    How Our Contactless Ordering Upsell Works
                 </h2>
                 <p className="text-xl text-text">
-                    Three steps. Zero training. Measurable revenue lift from day one.
+                    Three steps. Zero training. Measurable restaurant revenue optimization from day one.
                 </p>
             </div>
 

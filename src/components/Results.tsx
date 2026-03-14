@@ -3,9 +3,9 @@ import { Section } from './ui/Section';
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "10–20%", label: "Increase in Avg. Order Value" },
-    { value: "100%", label: "Tables Covered Automatically" },
-    { value: "0", label: "Staff Training Required" }
+    { value: "10–20%", label: "Increase Average Order Value Restaurant Wide" },
+    { value: "100%", label: "Tables Covered By Restaurant Ordering System" },
+    { value: "0", label: "Staff Training Required For QR Menu Upselling" }
 ];
 
 export const Results: React.FC = () => {
@@ -14,11 +14,11 @@ export const Results: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                        Measurable Results. <br />
+                        Guaranteed Café Revenue Increase. <br />
                         <span className="text-primary">No Guesswork.</span>
                     </h2>
                     <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                        Increase average order value by 10–20%. Promote high-margin items automatically. Capture guest data for smarter repeat visits. No additional staff training required.
+                        With our digital menu upsell, increase average order value restaurant figures by 10–20%. Promote high-margin items automatically. Capture guest data for smarter repeat visits. No additional staff training required.
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
