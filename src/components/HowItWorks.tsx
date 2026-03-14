@@ -14,7 +14,7 @@ const steps = [
         icon: <Sparkles className="w-8 h-8 text-primary" />,
         step: "Step 02",
         title: "Automated Restaurant Upselling",
-        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context — powering an AI-powered QR menu experience."
+        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context, powering an AI-powered QR menu experience."
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-primary" />,
@@ -29,7 +29,7 @@ export const HowItWorks: React.FC = () => {
         <Section background="beige" id="how-it-works">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    How Our Contactless Ordering Upsell Works
+                    How Our <span className="text-primary">QR Menu Upselling</span> Works
                 </h2>
                 <p className="text-xl text-text">
                     Three steps. Zero training. Measurable restaurant revenue optimization from day one.

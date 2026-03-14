@@ -17,7 +17,7 @@ const features = [
     {
         icon: <Sparkles className="w-6 h-6" />,
         title: "Automated Restaurant Upselling Adapts",
-        description: "Powered by smart logic, this automated restaurant upselling learns from guest behavior — improving results daily without any manual input."
+        description: "Powered by smart logic, this automated restaurant upselling learns from guest behavior, improving results daily without any manual input."
     },
 ];
 
@@ -34,11 +34,11 @@ export const Solution: React.FC = () => {
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         A System Designed To <br />
-                        <span className="text-primary">Increase Average Bill Size Café & Restaurant Wide.</span>
+                        <span className="text-primary">Increase Average Order Value.</span>
                     </h2>
 
                     <p className="text-xl text-text mb-8 leading-relaxed">
-                        If your venue serves 80 tables a day and uses our digital menu upsell to add just ₹60 per order, that’s over ₹1.4 lakh in additional monthly revenue — with zero extra staff effort.
+                        If your venue serves 80 tables a day and uses our digital menu upsell to add just ₹60 per order, that’s over ₹1.4 lakh in additional monthly revenue, with zero extra staff effort.
                     </p>
 
                     <div className="space-y-6">

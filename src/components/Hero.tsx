@@ -24,12 +24,12 @@ export const Hero: React.FC = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                        The ultimate restaurant upselling system to <br />
-                        <span className="text-gradient">increase average order value restaurant wide.</span>
+                        The Ultimate <br />
+                        <span className="text-gradient">Restaurant Upselling System.</span>
                     </h1>
 
                     <p className="text-xl text-text mb-8 max-w-lg leading-relaxed">
-                        Orlena transforms your setup into an automated restaurant upselling machine. Our smart QR menu upselling seamlessly recommends items at the right moment — no extra staff effort required.
+                        Orlena transforms your setup into an automated restaurant upselling machine. Our smart QR menu upselling seamlessly recommends items at the right moment, with no extra staff effort required.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">

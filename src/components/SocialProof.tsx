@@ -12,13 +12,13 @@ const testimonials = [
     {
         name: "Arjun Nair",
         role: "Founder, BrewVerve (Kochi)",
-        content: "We were leaving money on the table at every single table. Orlena fixed that — automated upsells, zero friction, and our guests actually appreciate the suggestions.",
+        content: "We were leaving money on the table at every single table. Orlena fixed that, automated upsells, zero friction, and our guests actually appreciate the suggestions.",
         image: "https://randomuser.me/api/portraits/men/44.jpg"
     },
     {
         name: "Raghav Reddy",
         role: "Owner, Saffron Yard (Hyderabad)",
-        content: "No hardware to install, no staff to train. We saw measurable revenue lift in the first month — Orlena pays for itself many times over.",
+        content: "No hardware to install, no staff to train. We saw measurable revenue lift in the first month. Orlena pays for itself many times over.",
         image: "https://randomuser.me/api/portraits/men/86.jpg"
     }
 ];
@@ -28,10 +28,10 @@ export const SocialProof: React.FC = () => {
         <Section background="beige">
             <div className="text-center mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Operators Who Increased Revenue With Orlena
+                    Operators Who <span className="text-primary">Increase Average Order Value</span> With Orlena
                 </h2>
                 <p className="text-text text-lg">
-                    Cafe and restaurant owners across India are seeing measurable results.
+                    Restaurant and café owners seeing measurable revenue results.
                 </p>
             </div>
 

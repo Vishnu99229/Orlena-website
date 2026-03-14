@@ -26,10 +26,10 @@ export const Problem: React.FC = () => {
         <Section background="beige" className="relative">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    Lacking Digital Menu Upsell <span className="text-primary">Leaves Money on the Table.</span>
+                    Without <span className="text-primary">QR Menu Upselling</span>, You Leave Money on the Table.
                 </h2>
                 <p className="text-xl text-text">
-                    A PDF on a QR code doesn't upsell, doesn't learn, and doesn't grow your revenue. It's a missed opportunity at every table without automated restaurant upselling in place.
+                    A PDF on a QR code doesn't upsell, doesn't learn, and doesn't grow your revenue. It's a missed opportunity at every table without an automated restaurant upselling system in place.
                 </p>
             </div>
 
