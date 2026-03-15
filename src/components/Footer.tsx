@@ -1,5 +1,4 @@
 import React from 'react';
-import { Twitter, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 export const Footer: React.FC = () => {
     return (
@@ -13,20 +12,18 @@ export const Footer: React.FC = () => {
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             Intelligent QR menus that increase your average order value — automatically, at every table.
                         </p>
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Twitter size={20} />
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Instagram size={20} />
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Linkedin size={20} />
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Facebook size={20} />
-                            </a>
-                        </div>
+                        <a 
+                            href="https://www.producthunt.com/products/orlena?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-orlena" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <img 
+                                alt="Orlena - AI that increases your restaurant's average order value | Product Hunt" 
+                                width="250" 
+                                height="54" 
+                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1099136&theme=light&t=1773603698333" 
+                            />
+                        </a>
                     </div>
 
                     <div>
