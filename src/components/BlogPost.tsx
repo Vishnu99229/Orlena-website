@@ -9,6 +9,11 @@ interface BlogPostProps {
 export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blog";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', 'Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant and cafe owners need to know.');
+    }
   }, []);
 
   if (slug !== 'how-to-increase-average-order-value-restaurant') {
@@ -44,16 +49,12 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
           </header>
 
           <div className="prose prose-lg max-w-none text-stone-800 space-y-6">
-            <p className="font-medium text-stone-600">
-              Meta description: Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant owners in India need to know.
-            </p>
-
             <p>
               If you run a cafe or restaurant in India, you already know that getting customers through the door is only half the battle. The real revenue game is in what they spend once they sit down.
             </p>
 
             <p>
-              Indian restaurants saw a 10-20% higher average check value after implementing digital menus and QR codes. Yet most cafe and restaurant owners in Bangalore, Mumbai, Delhi, and across India are still leaving that revenue on the table every single day.
+              Indian restaurants saw a 37-40% higher average check value after implementing digital menus and QR codes. Yet most cafe and restaurant owners in Bangalore, Mumbai, Delhi, and across India are still leaving that revenue on the table every single day.
             </p>
 
             <p>
@@ -71,7 +72,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">1. Use AI-Powered QR Menu Upselling</h2>
             <p>This is the single highest-impact strategy available to restaurant owners in 2026. Traditional QR menus are just digital PDFs. They display your menu but do nothing to increase what a customer orders. An AI-powered QR menu upselling system like Orlena works differently. It automatically recommends high-margin add-ons, sides, and drinks at the exact moment a customer is browsing, based on what they have already selected.</p>
             <p>A customer orders a cold coffee. The system suggests a chocolate brownie at a 90% preference match. A customer orders pasta. The system recommends garlic bread and a mocktail. These are not random suggestions. They are data-driven restaurant cross-selling recommendations that convert at significantly higher rates than staff-driven upselling.</p>
-            <p>The result is a consistent 10-20% increase in average order value across every table, every shift, with zero staff training required. For cafes in Bangalore neighborhoods like Koramangala, Indiranagar, and HSR Layout where footfall is high and competition is fierce, this kind of automated revenue optimization is no longer optional. It is a competitive necessity.</p>
+            <p>The result is a consistent 37-40% increase in average order value across every table, every shift, with zero staff training required. For cafes in Bangalore neighborhoods like Koramangala, Indiranagar, and HSR Layout where footfall is high and competition is fierce, this kind of automated revenue optimization is no longer optional. It is a competitive necessity.</p>
 
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">2. Train Your Staff to Upsell Consistently</h2>
             <p>Even with the best restaurant upselling system in place, your staff remains a critical touchpoint. The problem is consistency. Research consistently shows that servers miss upsell opportunities at over 70% of tables, not because they do not want to upsell but because they are busy, distracted, or simply forget.</p>
@@ -98,13 +99,13 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
 
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Bottom Line</h2>
             <p>Increasing average order value in your cafe or restaurant does not require more customers, more marketing spend, or more staff. It requires a smarter system at the point of ordering.</p>
-            <p>The most effective combination in 2026 is an AI-powered QR menu upselling system that automates cross-selling recommendations, combined with well-engineered menu design and basic staff upsell training. Together these strategies can realistically increase your average order value by 15-25% within the first month.</p>
+            <p>The most effective combination in 2026 is an AI-powered QR menu upselling system that automates cross-selling recommendations, combined with well-engineered menu design and basic staff upsell training. Together these strategies can realistically increase your average order value by 37-40% within the first month.</p>
             <p>For cafe and restaurant owners in Bangalore, Mumbai, Pune, Hyderabad, and across India, the window to adopt this technology before your competitors do is still open. It will not stay open for long.</p>
           </div>
 
           <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
             <h3 className="text-2xl font-bold mb-4 text-stone-900">Want to increase your restaurant's average order value?</h3>
-            <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 10-20%.</p>
+            <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
             <a 
               href="https://hello.orlena.talk" 
               className="inline-block bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full hover:bg-[#e85d00] transition-colors shadow-sm"
