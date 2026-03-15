@@ -11,6 +11,8 @@ import { Footer } from './components/Footer';
 import { Integrations } from './components/Integrations';
 import { TermsOfService } from './components/TermsOfService';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { BlogList } from './components/BlogList';
+import { BlogPost } from './components/BlogPost';
 
 function App() {
   const path = window.location.pathname;
@@ -25,6 +27,14 @@ function App() {
 
   if (path === '/integrations' || path === '/integrations/') {
     return <Integrations />;
+  }
+
+  if (path === '/blog' || path === '/blog/') {
+    return <BlogList />;
+  }
+
+  if (path.startsWith('/blog/')) {
+    return <BlogPost slug={path.replace('/blog/', '')} />;
   }
 
   return (
