@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
@@ -14,13 +14,17 @@ const blogPosts = [
 ];
 
 export const BlogList: React.FC = () => {
+  useEffect(() => {
+    document.title = "Blogs | Orlena";
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
       <Navbar />
       <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-stone-900 leading-tight">
-            Blog
+            Blogs
           </h1>
           <div className="grid gap-8">
             {blogPosts.map((post) => (

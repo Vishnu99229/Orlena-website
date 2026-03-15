@@ -9,7 +9,7 @@ interface BlogPostProps {
 export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blog";
+    document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blogs";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute('content', 'Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant and cafe owners need to know.');
@@ -34,7 +34,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
       <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
         <article className="container mx-auto px-4 md:px-6 max-w-3xl">
           <a href="/blog" className="inline-flex items-center text-[#FF6B35] font-semibold mb-8 hover:text-[#e85d00] transition-colors">
-            ← Back to Blog
+            ← Back to Blogs
           </a>
           
           <header className="mb-12">
@@ -103,11 +103,28 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
             <p>For cafe and restaurant owners in Bangalore, Mumbai, Pune, Hyderabad, and across India, the window to adopt this technology before your competitors do is still open. It will not stay open for long.</p>
           </div>
 
+          <div className="my-8 flex justify-center">
+            <div dangerouslySetInnerHTML={{ __html: `
+              <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; border: 1px solid rgb(224, 224, 224); border-radius: 12px; padding: 20px; max-width: 500px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                  <img alt="Orlena" src="https://ph-files.imgix.net/ca582ef5-5d0e-4c68-8acc-55876b73a09a.png?auto=format&fit=crop&w=80&h=80" style="width: 64px; height: 64px; border-radius: 8px; object-fit: cover; flex-shrink: 0;">
+                  <div style="flex: 1 1 0%; min-width: 0px;">
+                    <h3 style="margin: 0px; font-size: 18px; font-weight: 600; color: rgb(26, 26, 26); line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Orlena</h3>
+                    <p style="margin: 4px 0px 0px; font-size: 14px; color: rgb(102, 102, 102); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">AI that increases your restaurant's average order value</p>
+                  </div>
+                </div>
+                <a href="https://www.producthunt.com/products/orlena?embed=true&utm_source=embed&utm_medium=post_embed" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; padding: 8px 16px; background: rgb(255, 97, 84); color: rgb(255, 255, 255); text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">Check it out on Product Hunt →</a>
+              </div>
+            ` }} />
+          </div>
+
           <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
             <h3 className="text-2xl font-bold mb-4 text-stone-900">Want to increase your restaurant's average order value?</h3>
             <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
             <a 
-              href="https://hello.orlena.talk" 
+              href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="inline-block bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full hover:bg-[#e85d00] transition-colors shadow-sm"
             >
               Book a free demo with Orlena
