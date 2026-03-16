@@ -103,6 +103,18 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
             <p>For cafe and restaurant owners in Bangalore, Mumbai, Pune, Hyderabad, and across India, the window to adopt this technology before your competitors do is still open. It will not stay open for long.</p>
           </div>
 
+          <p className="text-sm text-gray-500 mt-8">
+            Read our founder story on IndieHackers: {' '}
+            <a 
+              href="https://www.indiehackers.com/post/i-built-an-ai-upselling-system-for-restaurants-after-visiting-47-cafes-in-bangalore-just-launched-on-product-hunt-today-7qRI8pgmvm2YXOPRxvSv" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary underline"
+            >
+              How I built Orlena after visiting 47 cafes in Bangalore
+            </a>
+          </p>
+
           <div className="my-8 flex justify-center">
             <div dangerouslySetInnerHTML={{ __html: `
               <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; border: 1px solid rgb(224, 224, 224); border-radius: 12px; padding: 20px; max-width: 500px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;">
