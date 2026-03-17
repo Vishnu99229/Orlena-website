@@ -20,6 +20,7 @@ export const Navbar: React.FC = () => {
         { name: 'How It Works', href: '#how-it-works' },
         { name: 'Results', href: '#results' },
         { name: 'Pricing', href: '#pricing' },
+        { name: 'Calculator', href: '/calculator' },
     ];
 
     return (

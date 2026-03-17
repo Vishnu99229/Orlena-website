@@ -13,6 +13,7 @@ import { TermsOfService } from './components/TermsOfService';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
+import { Calculator } from './components/Calculator';
 
 function App() {
   const path = window.location.pathname;
@@ -27,6 +28,10 @@ function App() {
 
   if (path === '/integrations' || path === '/integrations/') {
     return <Integrations />;
+  }
+
+  if (path === '/calculator' || path === '/calculator/') {
+    return <Calculator />;
   }
 
   if (path === '/blog' || path === '/blog/') {

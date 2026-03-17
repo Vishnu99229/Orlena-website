@@ -31,6 +31,7 @@ export const Footer: React.FC = () => {
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
+                            <li><a href="/calculator" className="hover:text-primary transition-colors">Calculator</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Case Studies</a></li>
                             <li><a href="/integrations" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Integrations</a></li>
                         </ul>
