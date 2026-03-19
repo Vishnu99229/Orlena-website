@@ -9,19 +9,253 @@ interface BlogPostProps {
 export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blogs";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute('content', 'Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant and cafe owners need to know.');
+    if (slug === 'best-restaurant-upselling-software-india-2026') {
+      document.title = "Best Restaurant Upselling Software in India 2026 | Honest Comparison | Orlena Blog";
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', 'Looking for the best restaurant upselling software in India? We compare the top options for cafe and restaurant owners in 2026, from POS-based upselling to AI-powered QR menu systems.');
+      }
+    } else {
+      document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blogs";
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', 'Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant and cafe owners need to know.');
+      }
     }
-  }, []);
+  }, [slug]);
 
-  if (slug !== 'how-to-increase-average-order-value-restaurant') {
+  if (slug !== 'how-to-increase-average-order-value-restaurant' && slug !== 'best-restaurant-upselling-software-india-2026') {
     return (
       <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
         <Navbar />
         <main className="flex-grow flex items-center justify-center pt-32 pb-20 md:pt-40 md:pb-28">
             <h1 className="text-2xl font-bold text-stone-600">Post not found.</h1>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (slug === 'best-restaurant-upselling-software-india-2026') {
+    return (
+      <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
+        <Navbar />
+        <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
+          <article className="container mx-auto px-4 md:px-6 max-w-3xl">
+            <a href="/blog" className="inline-flex items-center text-[#FF6B35] font-semibold mb-8 hover:text-[#e85d00] transition-colors">
+              ← Back to Blogs
+            </a>
+            
+            <header className="mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 text-stone-900 leading-tight">
+                Best Restaurant Upselling Software in India 2026: An Honest Comparison
+              </h1>
+              <div className="flex items-center gap-4 text-sm text-stone-500">
+                <time>March 19, 2026</time>
+                <span>•</span>
+                <span>5 min read</span>
+              </div>
+            </header>
+
+            <div className="prose prose-lg max-w-none text-stone-800 space-y-6">
+              <p>
+                Most restaurant software in India focuses on billing, inventory, and GST compliance. That is important. But none of it answers the question that directly impacts your daily revenue: How do I get customers to spend more per visit?
+              </p>
+              <p>
+                That is what upselling software solves. This guide compares the honest options available to cafe and restaurant owners in India in 2026, what they do well, what they miss, and which one is right for your business.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">What Is Restaurant Upselling Software?</h2>
+              <p>
+                Restaurant upselling software is any tool that systematically encourages customers to add more items to their order, such as sides, drinks, desserts, or premium upgrades. The goal is simple: increase your average order value without adding more customers or more staff.
+              </p>
+              <p>
+                Done manually, upselling is inconsistent. Staff are busy, forget, or feel awkward suggesting add-ons. Done with software, it happens at every table, every order, automatically.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The 5 Main Options in India Right Now</h2>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-8 mb-3">1. Petpooja</h3>
+              <p>
+                Petpooja is India&apos;s leading restaurant management platform, powering over 1,00,000 restaurants across India. It is primarily a POS and billing system with basic upselling features built in, such as suggested items at checkout and combo bundling. The upselling is staff-driven and manual.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Best for:</strong> Restaurants that want a complete POS system with basic upselling built in.</li>
+                <li><strong>Limitation:</strong> Upselling depends entirely on your staff using it consistently.</li>
+                <li><strong>Pricing:</strong> Starts around Rs 12,000 per year.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-8 mb-3">2. Restroworks</h3>
+              <p>
+                Restroworks has menu engineering features that help you identify and promote high-margin items. The upselling is largely dependent on staff execution. It works well for multi-outlet restaurants that want centralized control.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Best for:</strong> Mid-size to large restaurant chains.</li>
+                <li><strong>Limitation:</strong> No automated upselling at table level.</li>
+                <li><strong>Pricing:</strong> Premium pricing, better suited for chains.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-8 mb-3">3. LimeTray</h3>
+              <p>
+                LimeTray has QR ordering capabilities with some upsell prompt features at checkout. The upselling logic is rule-based rather than AI-driven, meaning you manually set which items get recommended.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Best for:</strong> Restaurants that want a digital menu with basic checkout upselling.</li>
+                <li><strong>Limitation:</strong> Recommendations are static and do not adapt to what the customer is actually ordering.</li>
+                <li><strong>Pricing:</strong> Mid-range, typically bundled with their POS.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-8 mb-3">4. DotPe</h3>
+              <p>
+                DotPe offers QR-based digital ordering with some upsell nudges built into the checkout flow. It integrates well with WhatsApp and is popular with smaller cafes and QSRs because of its low setup cost.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Best for:</strong> Small cafes and QSRs looking for affordable digital ordering with light upselling.</li>
+                <li><strong>Limitation:</strong> Upsell recommendations are generic and not personalized to the order.</li>
+              </ul>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-8 mb-3">5. Orlena</h3>
+              <p>
+                Orlena is the only platform in this list built specifically for one purpose: increasing average order value through AI-powered QR menu upselling.
+              </p>
+              <p>
+                When a customer selects a cold coffee, Orlena automatically recommends a brownie. When a customer picks a pasta, Orlena suggests garlic bread and a mocktail. These recommendations are driven by AI that learns from ordering patterns at your specific cafe.
+              </p>
+              <p>
+                The result is consistent upselling at every single table, every shift, without your staff doing anything.
+              </p>
+              <p>
+                Early results show a 23% increase in average order value from week one.
+              </p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Best for:</strong> Cafes and restaurants that want to increase average order value automatically.</li>
+                <li><strong>Limitation:</strong> Focused on upselling specifically. Not a full POS or billing system. Most cafes use it alongside their existing POS.</li>
+                <li><strong>Pricing:</strong> See <a href="https://hello.orlena.talk/pricing" className="text-primary underline" target="_blank" rel="noopener noreferrer">hello.orlena.talk/pricing</a></li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Comparison Table</h2>
+              
+              <p>
+                Want to know exactly how much revenue you are missing right now? Try the free <a href="/calculator" className="text-primary underline">Orlena Revenue Calculator</a> and see your numbers in 30 seconds.
+              </p>
+
+              <div className="overflow-x-auto mt-6 mb-8 rounded-lg border border-stone-200">
+                <table className="w-full text-left border-collapse min-w-[600px]">
+                  <thead>
+                    <tr className="bg-[#1A1A2E] text-white">
+                      <th className="p-4 font-semibold text-sm">Software</th>
+                      <th className="p-4 font-semibold text-sm">Primary Focus</th>
+                      <th className="p-4 font-semibold text-sm">Upselling Type</th>
+                      <th className="p-4 font-semibold text-sm">Staff Required</th>
+                      <th className="p-4 font-semibold text-sm">Best For</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-stone-800 text-sm">
+                    <tr className="border-b border-stone-200 bg-white">
+                      <td className="p-4 font-medium">Petpooja</td>
+                      <td className="p-4">POS and billing</td>
+                      <td className="p-4">Manual staff-driven</td>
+                      <td className="p-4">Yes</td>
+                      <td className="p-4">All restaurant types</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-50">
+                      <td className="p-4 font-medium">Restroworks</td>
+                      <td className="p-4">Chain management</td>
+                      <td className="p-4">Menu engineering</td>
+                      <td className="p-4">Yes</td>
+                      <td className="p-4">Multi-outlet chains</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-white">
+                      <td className="p-4 font-medium">LimeTray</td>
+                      <td className="p-4">Digital ordering</td>
+                      <td className="p-4">Rule-based at checkout</td>
+                      <td className="p-4">Partial</td>
+                      <td className="p-4">Mid-size restaurants</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-50">
+                      <td className="p-4 font-medium">DotPe</td>
+                      <td className="p-4">QR ordering</td>
+                      <td className="p-4">Generic prompts</td>
+                      <td className="p-4">Partial</td>
+                      <td className="p-4">Small cafes and QSRs</td>
+                    </tr>
+                    <tr className="bg-[#FFF5F1]">
+                      <td className="p-4 font-bold text-[#FF6B35]">Orlena</td>
+                      <td className="p-4 text-[#FF6B35]">AI upselling</td>
+                      <td className="p-4 text-[#FF6B35]">Fully automated AI</td>
+                      <td className="p-4 text-[#FF6B35]">No</td>
+                      <td className="p-4 text-[#FF6B35]">Cafes focused on AOV</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Which One Should You Choose?</h2>
+              <p>
+                <strong>If you need a complete POS system first:</strong> Start with Petpooja or DotPe. Get your billing and operations sorted, then add Orlena on top for automated upselling.
+              </p>
+              <p>
+                <strong>If you already have a POS and want to increase revenue:</strong> Orlena is the only purpose-built solution that increases average order value automatically without any staff training or operational changes.
+              </p>
+              <p>
+                <strong>If you run multiple outlets:</strong> Restroworks gives you the best centralized control, but pair it with an AI upselling layer for revenue optimization at each table.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Bottom Line</h2>
+              <p>
+                Most restaurant software in India solves the wrong problem. Billing accuracy, inventory tracking, and GST compliance are important but they do not grow your revenue per table.
+              </p>
+              <p>
+                The cafes and restaurants winning in 2026 combine a solid POS system for operations with an AI upselling layer for revenue. These are two different tools solving two different problems. You need both.
+              </p>
+              <p>
+                If your average bill is Rs 400 and you serve 60 tables a day, a 23% increase in average order value adds over Rs 1.6 lakh in additional monthly revenue from the same customers you already have.
+              </p>
+              <p>
+                Want to calculate exactly how much your cafe is leaving on the table? Try the free <a href="/calculator" className="text-primary underline">Orlena Revenue Calculator</a>.
+              </p>
+            </div>
+
+            <p className="text-sm text-gray-500 mt-8">
+              Read our founder story on IndieHackers: {' '}
+              <a 
+                href="https://www.indiehackers.com/post/i-built-an-ai-upselling-system-for-restaurants-after-visiting-47-cafes-in-bangalore-just-launched-on-product-hunt-today-7qRI8pgmvm2YXOPRxvSv" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary underline"
+              >
+                How I built Orlena after visiting 47 cafes in Bangalore
+              </a>
+            </p>
+
+            <div className="my-8 flex justify-center">
+              <div dangerouslySetInnerHTML={{ __html: `
+                <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; border: 1px solid rgb(224, 224, 224); border-radius: 12px; padding: 20px; max-width: 500px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;">
+                  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                    <img alt="Orlena" src="https://ph-files.imgix.net/ca582ef5-5d0e-4c68-8acc-55876b73a09a.png?auto=format&fit=crop&w=80&h=80" style="width: 64px; height: 64px; border-radius: 8px; object-fit: cover; flex-shrink: 0;">
+                    <div style="flex: 1 1 0%; min-width: 0px;">
+                      <h3 style="margin: 0px; font-size: 18px; font-weight: 600; color: rgb(26, 26, 26); line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Orlena</h3>
+                      <p style="margin: 4px 0px 0px; font-size: 14px; color: rgb(102, 102, 102); line-height: 1.4; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">AI that increases your restaurant's average order value</p>
+                    </div>
+                  </div>
+                  <a href="https://www.producthunt.com/products/orlena?embed=true&utm_source=embed&utm_medium=post_embed" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; padding: 8px 16px; background: rgb(255, 97, 84); color: rgb(255, 255, 255); text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600;">Check it out on Product Hunt →</a>
+                </div>
+              ` }} />
+            </div>
+
+            <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 text-stone-900">Ready to increase your restaurant&apos;s average order value?</h3>
+              <p className="text-stone-600 mb-6 font-medium">See how Orlena&apos;s AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
+              <a 
+                href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full hover:bg-[#e85d00] transition-colors shadow-sm"
+              >
+                Book a Free Demo
+              </a>
+            </div>
+          </article>
         </main>
         <Footer />
       </div>

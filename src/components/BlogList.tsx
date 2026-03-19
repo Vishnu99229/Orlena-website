@@ -5,6 +5,13 @@ import { Footer } from './Footer';
 
 const blogPosts = [
   {
+    title: "Best Restaurant Upselling Software in India 2026: An Honest Comparison",
+    excerpt: "Petpooja, LimeTray, DotPe, Restroworks, or Orlena? We compare every major restaurant upselling platform available in India so you can make the right choice for your cafe or restaurant.",
+    date: "March 19, 2026",
+    readTime: "5 min read",
+    slug: "best-restaurant-upselling-software-india-2026"
+  },
+  {
     title: "How to Increase Average Order Value in Your Cafe or Restaurant",
     excerpt: "Most cafe and restaurant owners in India are leaving significant revenue on the table every single shift. Here are the proven strategies to increase average order value in 2026.",
     date: "March 15, 2026",
