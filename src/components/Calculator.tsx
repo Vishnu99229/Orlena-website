@@ -156,13 +156,13 @@ export const Calculator: React.FC = () => {
                         {...fadeUp}
                         className="bg-[#FF6B35] rounded-2xl p-8 md:p-12 text-center text-white shadow-xl"
                     >
-                        <p className="text-lg md:text-xl font-medium mb-2 opacity-90">
+                        <p className="text-lg md:text-xl font-medium mb-2">
                             With Orlena you make an extra
                         </p>
                         <p className="text-4xl md:text-6xl font-bold mb-3">
                             Rs {fmt(extraPerMonth)} per month
                         </p>
-                        <p className="text-base md:text-lg opacity-80">
+                        <p className="text-base md:text-lg">
                             Rs {fmt(extraPerYear)} additional revenue per year from the same customers you already have
                         </p>
                     </motion.div>

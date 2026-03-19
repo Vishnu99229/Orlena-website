@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
                                 />
                                 <div className="flex justify-between items-start">
                                     <div>
-                                        <h3 className="font-bold text-stone-800 text-lg">Truffle Pappardelle</h3>
+                                        <h2 className="font-bold text-stone-800 text-lg">Truffle Pappardelle</h2>
                                         <p className="text-sm text-stone-500 mt-1">Handmade pasta, black truffle, parmesan</p>
                                     </div>
                                 </div>

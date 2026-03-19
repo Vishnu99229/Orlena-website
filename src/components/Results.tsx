@@ -40,8 +40,8 @@ export const Results: React.FC = () => {
                         className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-3xl relative z-10 w-full"
                     >
                         <div className="flex items-center justify-between mb-8">
-                            <h4 className="text-xl font-bold text-white">Performance Overview</h4>
-                            <select className="bg-transparent text-gray-300 border border-gray-600 rounded-lg px-3 py-1 text-sm">
+                            <h3 className="text-xl font-bold text-white">Performance Overview</h3>
+                            <select aria-label="Select time period" className="bg-transparent text-gray-300 border border-gray-600 rounded-lg px-3 py-1 text-sm">
                                 <option>This Month</option>
                             </select>
                         </div>

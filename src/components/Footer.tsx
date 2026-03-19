@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-lg mb-6">Product</h4>
+                        <h3 className="font-bold text-lg mb-6">Product</h3>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-lg mb-6">Company</h4>
+                        <h3 className="font-bold text-lg mb-6">Company</h3>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-lg mb-6">Contact</h4>
+                        <h3 className="font-bold text-lg mb-6">Contact</h3>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li>Vishnu Rajan</li>
                             <li>CEO, Orlena</li>

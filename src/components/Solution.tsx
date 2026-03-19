@@ -76,12 +76,12 @@ export const Solution: React.FC = () => {
                         <div className="flex items-center justify-between mb-8 pb-8 border-b border-gray-100">
                             <div>
                                 <p className="text-sm text-gray-500 mb-1">Customer Orders</p>
-                                <h4 className="text-xl font-bold">Cold Coffee</h4>
+                                <h3 className="text-xl font-bold">Cold Coffee</h3>
                             </div>
                             <ArrowRight className="text-gray-300" />
                             <div className="text-right">
                                 <p className="text-sm text-primary font-bold mb-1">Orlena Suggests</p>
-                                <h4 className="text-xl font-bold">Chocolate Brownie</h4>
+                                <h3 className="text-xl font-bold">Chocolate Brownie</h3>
                                 <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">+90% Match</span>
                             </div>
                         </div>
@@ -89,12 +89,12 @@ export const Solution: React.FC = () => {
                         <div className="flex items-center justify-between">
                             <div>
                                 <p className="text-sm text-gray-500 mb-1">Customer Orders</p>
-                                <h4 className="text-xl font-bold">Spicy Pasta</h4>
+                                <h3 className="text-xl font-bold">Spicy Pasta</h3>
                             </div>
                             <ArrowRight className="text-gray-300" />
                             <div className="text-right">
                                 <p className="text-sm text-primary font-bold mb-1">Orlena Suggests</p>
-                                <h4 className="text-xl font-bold">Garlic Bread & Mocktail</h4>
+                                <h3 className="text-xl font-bold">Garlic Bread & Mocktail</h3>
                                 <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">+95% Match</span>
                             </div>
                         </div>

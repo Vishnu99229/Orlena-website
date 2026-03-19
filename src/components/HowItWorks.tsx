@@ -78,17 +78,17 @@ export const HowItWorks: React.FC = () => {
                 <div className="bg-gray-50 p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <p className="text-sm text-gray-500 mb-1">Total Revenue</p>
-                        <h4 className="text-3xl font-bold text-gray-900">$12,450</h4>
+                        <h3 className="text-3xl font-bold text-gray-900">$12,450</h3>
                         <span className="text-green-500 text-sm font-medium">↑ 12% vs last week</span>
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <p className="text-sm text-gray-500 mb-1">Upsell Revenue</p>
-                        <h4 className="text-3xl font-bold text-primary">$2,840</h4>
+                        <h3 className="text-3xl font-bold text-primary">$2,840</h3>
                         <span className="text-green-500 text-sm font-medium">↑ 24% vs last week</span>
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-sm">
                         <p className="text-sm text-gray-500 mb-1">Avg. Order Value</p>
-                        <h4 className="text-3xl font-bold text-gray-900">$42.50</h4>
+                        <h3 className="text-3xl font-bold text-gray-900">$42.50</h3>
                         <span className="text-green-500 text-sm font-medium">↑ 18% vs last week</span>
                     </div>
                 </div>

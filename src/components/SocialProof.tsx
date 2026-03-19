@@ -50,7 +50,7 @@ export const SocialProof: React.FC = () => {
                                 <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400" />
                             </div>
                             <div>
-                                <h4 className="font-bold text-sm text-secondary">{item.name}</h4>
+                                <h3 className="font-bold text-sm text-secondary">{item.name}</h3>
                                 <p className="text-xs text-text-light">{item.role}</p>
                             </div>
                         </div>

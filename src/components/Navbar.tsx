@@ -54,6 +54,7 @@ export const Navbar: React.FC = () => {
                     <button
                         className="md:hidden text-text-dark"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
                     >
                         {isMobileMenuOpen ? <X /> : <Menu />}
                     </button>
