@@ -16,10 +16,10 @@ export const Navbar: React.FC = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Features', href: '#solution' },
-        { name: 'How It Works', href: '#how-it-works' },
-        { name: 'Results', href: '#results' },
-        { name: 'Pricing', href: '#pricing' },
+        { name: 'Features', href: '/#solution' },
+        { name: 'How It Works', href: '/#how-it-works' },
+        { name: 'Results', href: '/#results' },
+        { name: 'Pricing', href: '/#pricing' },
         { name: 'Calculator', href: '/calculator' },
     ];
 
@@ -31,7 +31,7 @@ export const Navbar: React.FC = () => {
             <div className="container mx-auto px-4 md:px-6 max-w-7xl">
                 <nav className="flex items-center justify-between">
                     <div className="flex items-center">
-                        <a href="#" className="font-heading font-bold text-2xl text-primary">
+                        <a href="/" className="font-heading font-bold text-2xl text-primary">
                             Orlena
                         </a>
                     </div>
