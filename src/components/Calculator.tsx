@@ -64,32 +64,41 @@ export const Calculator: React.FC = () => {
 
     const handleWhatsAppSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const cleaned = whatsapp.replace(/[\s-]/g, '');
-        if (!cleaned || cleaned.length < 10 || isNaN(Number(cleaned))) {
+        
+        // Step 1: Open WhatsApp FIRST - before anything else - browsers only allow
+        // window.open() as the direct first action of a click handler
+        const number = whatsapp.trim().replace(/\s|-/g, "");
+        const missedText = extraPerMonth ? Math.round(extraPerMonth).toLocaleString('en-IN') : "unknown";
+        const now = new Date();
+        const timeString = now.toLocaleString('en-IN', {
+            day: '2-digit', month: 'short', year: 'numeric',
+            hour: '2-digit', minute: '2-digit', hour12: true
+        });
+
+        const message = `🔔 NEW LEAD from Orlena Calculator!\n\nPhone: ${number || "not entered yet"}\nMissed Revenue: ₹${missedText}/month\nTime: ${timeString}\n\nCall them now!`;
+
+        window.open(
+            `https://wa.me/919880622570?text=${encodeURIComponent(message)}`,
+            '_blank'
+        );
+
+        // Step 2: NOW do validation
+        const digitsOnly = number.replace(/[^0-9]/g, "");
+        if (digitsOnly.length < 10) {
             setWhatsappError("Please enter a valid WhatsApp number");
             return;
         }
-        setWhatsappError("");
 
-        const payload = {
-            number: whatsapp,
+        // Step 3: Save to localStorage
+        localStorage.setItem('orlena_lead_whatsapp', JSON.stringify({
+            number: number,
             missedRevenue: Math.round(extraPerMonth),
             timestamp: new Date().toISOString()
-        };
-        localStorage.setItem('orlena_lead_whatsapp', JSON.stringify(payload));
+        }));
+
+        // Step 4: Show success state
         setIsSubmitted(true);
-
-        const formattedTime = new Date().toLocaleString('en-IN', {
-            day: '2-digit',
-            month: 'short',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: true
-        });
-
-        const message = `🔔 NEW LEAD from Orlena Calculator!\n\nPhone: ${whatsapp}\nMissed Revenue: ₹${fmt(extraPerMonth)}/month\nTime: ${formattedTime}\n\nCall them now!`;
-        window.open(`https://wa.me/919880622570?text=${encodeURIComponent(message)}`, '_blank');
+        setWhatsappError("");
     };
 
     return (
