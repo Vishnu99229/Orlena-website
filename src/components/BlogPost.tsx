@@ -16,11 +16,22 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
         metaDesc.setAttribute('content', 'Looking for the best restaurant upselling software in India? We compare the top options for cafe and restaurant owners in 2026, from POS-based upselling to AI-powered QR menu systems.');
       }
     } else {
-      document.title = "How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide) | Orlena Blogs";
+      document.title = "Why Your Cafe Loses ₹40,000/Month (And How to Stop It) | Orlena";
+      
       const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute('content', 'Learn proven strategies to increase average order value in your cafe or restaurant. From AI-powered QR menu upselling to staff training techniques, this guide covers everything restaurant and cafe owners need to know.');
-      }
+      if (metaDesc) metaDesc.setAttribute('content', "Most cafe owners in India don't realise their menu is silently killing revenue. Here's exactly how to increase average order value by 20-30% without hiring more staff or spending on ads.");
+      
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', "Why Your Cafe Loses ₹40,000/Month (And How to Stop It) | Orlena");
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', "Most cafe owners in India don't realise their menu is silently killing revenue. Here's how to increase average order value by 20-30% without hiring more staff.");
+      
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', "Why Your Cafe Loses ₹40,000/Month (And How to Stop It) | Orlena");
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', "Most cafe owners in India don't realise their menu is silently killing revenue. Here's how to increase average order value by 20-30% without hiring more staff.");
     }
   }, [slug]);
 
@@ -273,7 +284,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
           
           <header className="mb-12">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-stone-900 leading-tight">
-              How to Increase Average Order Value in Your Cafe or Restaurant (2026 Guide)
+              Why Your Cafe Is Losing ₹40,000 Every Month (And Exactly How to Stop It)
             </h1>
             <div className="flex items-center gap-4 text-sm text-stone-500">
               <time>March 15, 2026</time>
@@ -283,6 +294,9 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
           </header>
 
           <div className="prose prose-lg max-w-none text-stone-800 space-y-6">
+            <p>
+              If your cafe serves 40 tables a day with an average bill of ₹450, you are likely leaving between ₹30,000 and ₹50,000 on the table every single month. Not because of bad food. Not because of bad location. But because of three specific things your menu and staff are not doing. This guide covers exactly what those three things are and how to fix them today.
+            </p>
             <p>
               If you run a cafe or restaurant in India, you already know that getting customers through the door is only half the battle. The real revenue game is in what they spend once they sit down.
             </p>
