@@ -20,6 +20,7 @@ export const Navbar: React.FC = () => {
         { name: 'How It Works', href: '/#how-it-works' },
         { name: 'Results', href: '/#results' },
         { name: 'Pricing', href: '/#pricing' },
+        { name: 'Blogs', href: '/blog' },
         { name: 'Calculator', href: '/calculator' },
     ];
 
@@ -38,15 +39,18 @@ export const Navbar: React.FC = () => {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="text-text hover:text-primary font-medium transition-colors"
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isActive = link.href === '/blog' ? typeof window !== 'undefined' && window.location.pathname.startsWith('/blog') : false;
+                            return (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    className={`font-medium transition-colors ${isActive ? 'text-primary' : 'text-text hover:text-primary'}`}
+                                >
+                                    {link.name}
+                                </a>
+                            );
+                        })}
                         <Button size="sm" href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" target="_blank">Book a Demo</Button>
                     </div>
 
@@ -71,16 +75,19 @@ export const Navbar: React.FC = () => {
                         className="md:hidden bg-white border-b border-gray-100"
                     >
                         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-                            {navLinks.map((link) => (
-                                <a
-                                    key={link.name}
-                                    href={link.href}
-                                    className="text-text-dark font-medium py-2"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                    {link.name}
-                                </a>
-                            ))}
+                            {navLinks.map((link) => {
+                                const isActive = link.href === '/blog' ? typeof window !== 'undefined' && window.location.pathname.startsWith('/blog') : false;
+                                return (
+                                    <a
+                                        key={link.name}
+                                        href={link.href}
+                                        className={`font-medium py-2 ${isActive ? 'text-primary' : 'text-text-dark hover:text-primary'}`}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        {link.name}
+                                    </a>
+                                );
+                            })}
                             <Button className="w-full" href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" target="_blank">Book a Demo</Button>
                         </div>
                     </motion.div>
