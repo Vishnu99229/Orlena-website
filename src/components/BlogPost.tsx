@@ -15,6 +15,23 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
       if (metaDesc) {
         metaDesc.setAttribute('content', 'Looking for the best restaurant upselling software in India? We compare the top options for cafe and restaurant owners in 2026, from POS-based upselling to AI-powered QR menu systems.');
       }
+    } else if (slug === 'qr-menu-upselling-complete-guide-india') {
+      document.title = "QR Menu Upselling India: How Smart Cafes Are Adding ₹50,000/Month Without Extra Staff | Orlena";
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', "Most QR menus in India just show food. The smart ones sell it. Here is exactly how restaurant and cafe owners are using QR menu upselling to increase average order value by 23% without hiring anyone new.");
+      
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', "QR Menu Upselling India: How Smart Cafes Are Adding ₹50,000/Month Without Extra Staff | Orlena");
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', "Most QR menus in India just show food. The smart ones sell it. Here is exactly how to increase average order value by 23% without hiring anyone new.");
+      
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', "QR Menu Upselling India: How Smart Cafes Are Adding ₹50,000/Month Without Extra Staff | Orlena");
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', "Most QR menus in India just show food. The smart ones sell it. Here is exactly how to increase average order value by 23% without hiring anyone new.");
     } else {
       document.title = "Why Your Cafe Loses ₹40,000/Month (And How to Stop It) | Orlena";
       
@@ -35,12 +52,284 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
     }
   }, [slug]);
 
-  if (slug !== 'how-to-increase-average-order-value-restaurant' && slug !== 'best-restaurant-upselling-software-india-2026') {
+  if (slug !== 'how-to-increase-average-order-value-restaurant' && slug !== 'best-restaurant-upselling-software-india-2026' && slug !== 'qr-menu-upselling-complete-guide-india') {
     return (
       <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
         <Navbar />
         <main className="flex-grow flex items-center justify-center pt-32 pb-20 md:pt-40 md:pb-28">
             <h1 className="text-2xl font-bold text-stone-600">Post not found.</h1>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (slug === 'qr-menu-upselling-complete-guide-india') {
+    return (
+      <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
+        <Navbar />
+        <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
+          <article className="container mx-auto px-4 md:px-6 max-w-3xl">
+            <a href="/blog" className="inline-flex items-center text-[#FF6B35] font-semibold mb-8 hover:text-[#e85d00] transition-colors">
+              ← Back to Blogs
+            </a>
+            
+            <header className="mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 text-stone-900 leading-tight">
+                Your QR Menu Is Showing Food. It Should Be Selling It.
+              </h1>
+              <div className="flex items-center gap-4 text-sm text-stone-500">
+                <time>March 23, 2026</time>
+                <span>•</span>
+                <span>8 min read</span>
+              </div>
+            </header>
+
+            <div className="prose prose-lg max-w-none text-stone-800 space-y-6">
+              <p>
+                Every cafe and restaurant in Bangalore is putting a QR code on the table. Most of them are using it as a digital menu and nothing else. That is the equivalent of hiring a salesperson and telling them to stay quiet.
+              </p>
+              <p>
+                This guide is for cafe and restaurant owners who want to use their QR menu as an actual revenue tool, not just a laminated card replacement.
+              </p>
+              <p>
+                By the end of this you will know exactly how QR menu upselling works, why it outperforms staff upselling every single time, and how to set it up in your cafe this week.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">What Is QR Menu Upselling?</h2>
+              <p>
+                QR menu upselling is when your digital menu automatically suggests additional items to a customer while they are ordering. Instead of a static list of dishes and prices, the menu becomes an intelligent sales tool that recommends the right add-on at the right moment.
+              </p>
+              <p>Examples of what this looks like in practice:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>A customer selects a cappuccino. The menu shows: "Most people add a Hazelnut shot for just ₹40 more." One tap and it is added.</li>
+                <li>A customer orders a pasta. The menu shows: "This pairs perfectly with our Garlic Bread - add it for ₹120?" One tap.</li>
+                <li>A customer selects a burger. The menu shows: "Upgrade to a combo with fries and a cold brew for ₹89 extra?" One tap.</li>
+              </ul>
+              <p>
+                None of this requires your staff to say a word. The menu does the selling while your team focuses on serving.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Why Staff Upselling Fails (And Why This Matters For Your Cafe)</h2>
+              <p>If you have ever told your staff to upsell, you already know the problem.</p>
+              <p>
+                They forget. They feel awkward asking. During a rush they skip it entirely. A new staff member does not know which items to recommend together. And even your best waiter is only at one table at a time.
+              </p>
+              <p>
+                Research across restaurants shows that staff miss over 70% of upsell opportunities during a normal service. Not because they are bad at their jobs. Because upselling is a sales skill, and most restaurant staff are hospitality people, not salespeople.
+              </p>
+              <p>
+                A QR menu upselling system never forgets. It never feels awkward. It works on every single order, at every single table, during the lunch rush and the quiet Tuesday afternoon. It is consistent in a way that no human team can be.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Numbers: What QR Menu Upselling Actually Does to Revenue</h2>
+              <p>Here is a real example using typical Bangalore cafe numbers:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Tables served per day:</strong> 60</li>
+                <li><strong>Average order value without upselling:</strong> ₹420</li>
+                <li><strong>Monthly revenue:</strong> ₹7,56,000</li>
+              </ul>
+              
+              <p className="mt-4 font-semibold">With QR menu upselling (23% AOV increase):</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>New average order value:</strong> ₹517</li>
+                <li><strong>Monthly revenue:</strong> ₹9,30,600</li>
+              </ul>
+              
+              <p className="mt-4 font-bold text-xl">Additional revenue per month: ₹1,74,600</p>
+              <p>
+                That is not a projection. That is the math on a 23% increase in average order value, which is the average result Orlena produces across cafes and restaurants using the system.
+              </p>
+              <p>
+                Want to see what this looks like for your specific cafe? Use the calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a> - enter your tables and average bill and you will see your exact number in 30 seconds.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">What Gets Upsold and What Does Not</h2>
+              <p>Not every item is an upsell opportunity. The best QR menu upselling systems know the difference.</p>
+              
+              <p className="font-semibold">High conversion upsell items:</p>
+              <ul className="list-disc pl-5 space-y-2 mb-6">
+                <li>Add-on shots and syrups for coffee drinks (high margin, low price, easy yes)</li>
+                <li>Desserts suggested at the end of a meal (timing matters hugely here)</li>
+                <li>Combo upgrades (give them more for a small extra amount)</li>
+                <li>Beverages paired with food orders</li>
+                <li>Seasonal or limited specials shown prominently</li>
+              </ul>
+
+              <p className="font-semibold mt-6">Low conversion upsell items:</p>
+              <ul className="list-disc pl-5 space-y-2 mb-6">
+                <li>Main course upgrades (too big a decision)</li>
+                <li>Premium item swaps when the price gap is large</li>
+                <li>Items that do not logically connect to what they ordered</li>
+              </ul>
+
+              <p>
+                The key insight is that the best upsells are small decisions. A customer who has already committed to spending ₹400 can easily say yes to spending ₹440. The mental barrier for a ₹40 add-on is almost zero.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">How QR Menu Upselling Works Technically</h2>
+              <p>You do not need to rebuild your entire ordering system. Here is how it works at a basic level:</p>
+              <ol className="list-decimal pl-5 space-y-2">
+                <li>Your menu is digitised into the QR system</li>
+                <li>You define upsell rules - "when someone orders X, suggest Y"</li>
+                <li>The system can also learn from order patterns and automate suggestions over time</li>
+                <li>Customer scans QR, browses menu, sees suggestions inline while ordering</li>
+                <li>One tap to add, no friction, no staff involvement needed</li>
+              </ol>
+              <p>
+                The setup takes a few hours. The ongoing management is minimal. You set it up once and it runs every service.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Three Upsell Moments That Matter Most</h2>
+              <p>There are three specific moments in a customer's ordering journey where upselling works best. Miss these and the opportunity is gone.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Moment 1: Right after the main item is selected</h3>
+              <p>This is the highest conversion moment. The customer is in buying mode. They just said yes to something. A small add-on suggestion here gets a yes 30-40% of the time.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Moment 2: At the beverage selection stage</h3>
+              <p>Beverages are the highest margin items in any cafe. If someone is ordering food without a drink, a well-timed suggestion converts at surprisingly high rates.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Moment 3: At checkout before confirming the order</h3>
+              <p>A summary screen that shows "You might also like" with one or two items converts a portion of customers who would otherwise have finalised a smaller order.</p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">What Makes a Good Upsell Suggestion</h2>
+              <p>The difference between an upsell that works and one that annoys the customer comes down to three things:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Relevance</strong> - the suggestion must make sense with what they ordered. Suggesting a cold brew with a pasta works. Suggesting a biryani with a cold brew does not.</li>
+                <li><strong>Price gap</strong> - the upsell should be 10-25% of the original item price. A ₹400 main course pairs well with a ₹60-100 add-on. A ₹400 add-on suggestion will be ignored.</li>
+                <li><strong>Framing</strong> - "Most people add this" and "Pairs perfectly with" convert better than "Would you like to add". Social proof framing works even in a digital menu.</li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">QR Menu Upselling vs Traditional Upselling: A Direct Comparison</h2>
+              <div className="overflow-x-auto mt-6 mb-8 rounded-lg border border-stone-200">
+                <table className="w-full text-left border-collapse min-w-[600px]">
+                  <thead>
+                    <tr className="bg-[#1A1A2E] text-white">
+                      <th className="p-4 font-semibold text-sm">Feature</th>
+                      <th className="p-4 font-semibold text-sm">Staff Upselling</th>
+                      <th className="p-4 font-semibold text-sm">QR Menu Upselling</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-stone-800 text-sm">
+                    <tr className="border-b border-stone-200 bg-white">
+                      <td className="p-4 font-medium">Consistency</td>
+                      <td className="p-4">Varies by staff member</td>
+                      <td className="p-4">100% consistent every order</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-50">
+                      <td className="p-4 font-medium">Training required</td>
+                      <td className="p-4">Ongoing</td>
+                      <td className="p-4">None</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-white">
+                      <td className="p-4 font-medium">Works during rush</td>
+                      <td className="p-4">Often skipped</td>
+                      <td className="p-4">Always on</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-50">
+                      <td className="p-4 font-medium">Tracks what works</td>
+                      <td className="p-4">No data</td>
+                      <td className="p-4">Full analytics</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-white">
+                      <td className="p-4 font-medium">Cost</td>
+                      <td className="p-4">Staff time and training</td>
+                      <td className="p-4">Fixed monthly cost</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 bg-stone-50">
+                      <td className="p-4 font-medium">Scales with tables</td>
+                      <td className="p-4">Harder as you grow</td>
+                      <td className="p-4">Scales automatically</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Why Indian Cafes and Restaurants Are Switching Now</h2>
+              <p>Three things have changed in the last two years that make QR menu upselling a practical reality for Indian restaurants:</p>
+              <p>First, QR menus are now normal. Customers in Bangalore, Mumbai and Delhi are completely comfortable scanning and ordering digitally. The adoption barrier is gone.</p>
+              <p>Second, the technology has become affordable. What used to require a large POS investment is now available as a monthly subscription that costs less than one staff member's daily wage.</p>
+              <p>Third, margins are getting tighter. Rent is up. Ingredient costs are up. Staff costs are up. The cafes that survive the next three years will be the ones that extract maximum value from every customer who walks in, not the ones that cut costs.</p>
+              <p>Upselling is the only lever that increases revenue without increasing costs or customers.</p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">How to Get Started With QR Menu Upselling in Your Cafe</h2>
+              <p>Here is the honest step by step:</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 1: Audit your current menu</h3>
+              <p>Identify your top 10 selling items. For each one, write down the most logical add-on or upgrade. That is your upsell map.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 2: Calculate your current missed revenue</h3>
+              <p>Before you invest in any system, know what you are leaving on the table. Use the free calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a>. Enter your tables per day and average bill. The number that comes up is your monthly missed revenue at current conversion rates.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 3: Choose a QR upselling system built for Indian restaurants</h3>
+              <p>Not all QR menu systems have upselling built in. Most are just digital menus. Look specifically for a system that has AI-driven upsell suggestions, Indian payment integration, works on any smartphone without app download, and gives you analytics on what is being upsold.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 4: Start with your highest margin items</h3>
+              <p>Do not try to upsell everything at once. Pick your top 5 highest margin items and build your first upsell rules around those. See the results in week one before expanding.</p>
+              
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 5: Track average order value weekly</h3>
+              <p>This is your single most important metric. If average order value is going up, the system is working. If it is flat, adjust your upsell suggestions.</p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Cafe That Is Not Using This Is Losing To The One That Is</h2>
+              <p>Here is a reality that is uncomfortable but true. If two cafes in the same area are serving similar food at similar prices, the one using intelligent upselling will make 20-30% more revenue from the exact same number of customers.</p>
+              <p>That gap compounds. More revenue means better ingredients, better staff, better marketing. The cafe that figures out upselling first wins the neighbourhood.</p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Try Orlena Free - Built Specifically for Indian Cafes and Restaurants</h2>
+              <p>Orlena is an AI-powered QR menu upselling system built specifically for the Indian restaurant and cafe market. It plugs into your existing setup, requires zero staff training, and starts increasing your average order value from the first day.</p>
+              <p>Cafes using Orlena see an average 23% increase in order value within the first two weeks.</p>
+              <p>See what Orlena could do for your cafe:</p>
+              <ul className="list-disc pl-5 space-y-2 mb-6">
+                <li>Calculate your missed revenue at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a></li>
+                <li>Read what other restaurant owners are saying:</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-4 my-8 max-w-sm mx-auto">
+              <a 
+                href="https://www.producthunt.com/posts/orlena" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-[#1A1A2E] text-white font-medium py-3 px-6 rounded-lg text-center hover:bg-stone-800 transition-colors"
+              >
+                View Orlena on Product Hunt
+              </a>
+              <a 
+                href="https://www.indiehackers.com/product/orlena" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-[#FAFAFA] border border-stone-200 text-stone-800 font-medium py-3 px-6 rounded-lg text-center hover:bg-stone-50 transition-colors"
+              >
+                Read our story on Indie Hackers
+              </a>
+            </div>
+
+            <div className="bg-[#FAFAFA] border border-stone-200 rounded-xl p-6 mb-8 text-center mt-12">
+              <h3 className="text-xl font-bold text-stone-900 mb-4">Talk to Vishnu directly - WhatsApp or call:</h3>
+              <a 
+                href="https://wa.me/919880622570?text=Hi%20Vishnu!%20I%20read%20your%20blog%20on%20QR%20menu%20upselling%20and%20want%20to%20know%20more%20about%20Orlena."
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center gap-2 bg-[#1D9E75] text-white font-bold py-3 px-6 rounded-full hover:bg-[#15805e] transition-colors text-lg"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                +91 98806 22570
+              </a>
+              <p className="mt-4 text-sm text-stone-600">Tap the number above to open WhatsApp directly. No forms, no demos, no pitch decks. Just a conversation about whether Orlena makes sense for your cafe.</p>
+            </div>
+
+            <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 text-stone-900">Ready to increase your restaurant's average order value?</h3>
+              <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
+              <a 
+                href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full hover:bg-[#e85d00] transition-colors shadow-sm"
+              >
+                Book a Free Demo
+              </a>
+            </div>
+          </article>
         </main>
         <Footer />
       </div>

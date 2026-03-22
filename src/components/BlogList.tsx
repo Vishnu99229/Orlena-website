@@ -5,6 +5,13 @@ import { Footer } from './Footer';
 
 const blogPosts = [
   {
+    title: "Your QR Menu Is Showing Food. It Should Be Selling It.",
+    excerpt: "Most QR menus in India just show food. The smart ones sell it. Here is exactly how restaurant and cafe owners are using QR menu upselling to increase average order value by 23% without hiring anyone new.",
+    date: "March 23, 2026",
+    readTime: "8 min read",
+    slug: "qr-menu-upselling-complete-guide-india"
+  },
+  {
     title: "Best Restaurant Upselling Software in India 2026: An Honest Comparison",
     excerpt: "Petpooja, LimeTray, DotPe, Restroworks, or Orlena? We compare every major restaurant upselling platform available in India so you can make the right choice for your cafe or restaurant.",
     date: "March 19, 2026",
