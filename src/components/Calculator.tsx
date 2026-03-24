@@ -17,6 +17,15 @@ export const Calculator: React.FC = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     useEffect(() => {
+        // Set page title and meta description for SEO
+        document.title = 'Free Restaurant Revenue Calculator India | Calculate Your Missed Upsell Revenue | Orlena';
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute('content', "Free calculator for Indian cafe and restaurant owners. Enter your tables and average order value to see exactly how much revenue you're missing every month. No signup needed. Takes 30 seconds.");
+        }
+    }, []);
+
+    useEffect(() => {
         const stored = localStorage.getItem('orlena_lead_whatsapp');
         if (stored) {
             try {
@@ -100,6 +109,13 @@ export const Calculator: React.FC = () => {
         setIsSubmitted(true);
         setWhatsappError("");
     };
+
+    const seoChips = [
+        'Restaurant Revenue Calculator India',
+        'Cafe Average Order Value Calculator',
+        'Missed Revenue Calculator',
+        'Restaurant Upsell Calculator India',
+    ];
 
     return (
         <div className="min-h-screen bg-white">
@@ -329,6 +345,42 @@ export const Calculator: React.FC = () => {
                     </motion.div>
                     <p className="text-sm text-gray-400 mt-4">
                         No setup fees. No staff training. Cancel anytime.
+                    </p>
+                </div>
+            </section>
+
+            {/* SEO Content Section */}
+            <section className="mt-16 border-t border-[#ffffff10] bg-[#16213E] py-12 px-6">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="text-white text-2xl font-bold text-center mb-6">
+                        Free Restaurant Revenue Calculator for Indian Cafe and Restaurant Owners
+                    </h2>
+
+                    <p className="text-[#94A3B8] text-base leading-relaxed text-center max-w-2xl mx-auto mb-6">
+                        This free restaurant revenue calculator is built specifically for cafe and restaurant owners in India. Enter your average tables served per day and your current average order value to instantly calculate how much revenue your restaurant is missing every month from upselling gaps. No signup required, no email needed - just two numbers and your missed revenue figure appears in seconds.
+                    </p>
+
+                    <p className="text-[#94A3B8] text-base leading-relaxed text-center max-w-2xl mx-auto mb-6">
+                        Most cafes and restaurants in India are missing between 20% and 30% of potential revenue on every single order. This missed revenue calculator shows you exactly what that gap looks like in rupees for your specific business. Whether you run a small cafe in Koramangala, a multi-outlet restaurant in Indiranagar, or a quick service restaurant anywhere in Bangalore, this calculator gives you your real number in under 30 seconds.
+                    </p>
+
+                    <p className="text-[#94A3B8] text-base leading-relaxed text-center max-w-2xl mx-auto mb-8">
+                        Once you know your missed revenue number, Orlena can help you recover it. Orlena is an AI-powered QR menu upselling system built for Indian restaurants and cafes. It automatically cross-sells and recommends high-margin items through your QR menu, increasing average order value by an average of 23% without any staff training or additional hiring. Use this calculator as your starting point to understand the revenue opportunity, then see how Orlena captures it for your restaurant.
+                    </p>
+
+                    <div className="grid grid-cols-2 md:flex md:flex-wrap gap-2 justify-center">
+                        {seoChips.map((chip) => (
+                            <span
+                                key={chip}
+                                className="bg-[#1A1A2E] border border-[#ffffff15] text-[#94A3B8] text-sm px-4 py-2 rounded-full text-center"
+                            >
+                                {chip}
+                            </span>
+                        ))}
+                    </div>
+
+                    <p className="text-[#ffffff40] text-xs text-center mt-6">
+                        Trusted by cafe and restaurant owners in Bangalore, India.
                     </p>
                 </div>
             </section>
