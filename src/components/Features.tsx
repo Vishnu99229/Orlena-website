@@ -27,7 +27,7 @@ const Features: React.FC = () => {
                 </div>
 
                 <div className="mt-10">
-                    <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 lg:grid-cols-4">
+                    <dl className="grid grid-cols-2 gap-x-4 gap-y-6 md:gap-x-8 md:gap-y-10 lg:grid-cols-4">
                         {features.map((feature, index) => (
                             <div key={index} className="relative">
                                 <dt>

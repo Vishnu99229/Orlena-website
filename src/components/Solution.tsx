@@ -23,7 +23,7 @@ const features = [
 
 export const Solution: React.FC = () => {
     return (
-        <Section className="overflow-hidden" id="solution">
+        <Section className="overflow-hidden" id="features">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Left Content */}
                 <div>

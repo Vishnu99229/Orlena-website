@@ -43,7 +43,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-white" role="main">
+    <div className="min-h-screen bg-white overflow-x-hidden" role="main">
       <Navbar />
       <Hero />
       <Problem />

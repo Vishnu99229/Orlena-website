@@ -6,10 +6,10 @@ import { ArrowRight, User, ShoppingBag } from 'lucide-react';
 
 export const Hero: React.FC = () => {
     return (
-        <Section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+        <Section className="relative overflow-hidden bg-[#1A1A2E] md:bg-white pt-24 pb-12 md:pt-40 md:pb-28 px-5 md:px-4">
             {/* Background Gradient */}
-            <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-orange-100/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 -z-10 w-1/3 h-1/2 bg-gradient-to-t from-orange-50/60 to-transparent" />
+            <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-orange-100/40 to-transparent hidden md:block" />
+            <div className="absolute bottom-0 left-0 -z-10 w-1/3 h-1/2 bg-gradient-to-t from-orange-50/60 to-transparent hidden md:block" />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Text Content */}
@@ -23,20 +23,30 @@ export const Hero: React.FC = () => {
                         <span>restaurant revenue optimization</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                    <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 text-white md:text-secondary">
                         The Ultimate <br />
                         <span className="text-gradient">Restaurant Upselling System.</span>
                     </h1>
 
-                    <p className="text-xl text-text mb-8 max-w-lg leading-relaxed">
+                    <p className="text-base md:text-xl text-[#94A3B8] md:text-text mt-4 md:mt-0 mb-8 max-w-sm md:max-w-lg mx-auto md:mx-0 leading-relaxed">
                         Orlena transforms your setup into an automated restaurant upselling machine. Our smart QR menu upselling seamlessly recommends items at the right moment, with no extra staff effort required.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="lg" rightIcon={<ArrowRight size={20} />} href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" target="_blank">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 md:mt-0">
+                        <Button
+                            size="lg"
+                            rightIcon={<ArrowRight size={20} />}
+                            href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true"
+                            target="_blank"
+                            className="w-full sm:w-auto min-h-[52px] bg-[#FF6B35] hover:bg-[#e55f2f] rounded-xl md:rounded-full md:bg-primary md:hover:bg-primary-hover"
+                        >
                             Book a Demo
                         </Button>
-                        <Button size="lg" variant="outline">
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="w-full sm:w-auto min-h-[52px] rounded-xl md:rounded-full border-[#FF6B35] text-[#FF6B35] md:border-primary md:text-primary"
+                        >
                             See How It Works
                         </Button>
                     </div>
@@ -104,7 +114,7 @@ export const Hero: React.FC = () => {
                                 </div>
                                 <div className="grid grid-cols-2 gap-3">
                                     <button className="py-2.5 rounded-lg bg-stone-50 text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors">No, thank you</button>
-                                    <button className="py-2.5 rounded-lg bg-primary text-sm font-medium text-white shadow-lg shadow-orange-200 hover:bg-primary/90 transition-colors">Add for $6</button>
+                                    <button className="py-2.5 rounded-lg bg-primary text-sm font-medium text-white shadow-lg shadow-orange-200 hover:bg-primary/90 transition-colors">Add for ₹149</button>
                                 </div>
                             </motion.div>
                         </div>
