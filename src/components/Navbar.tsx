@@ -57,6 +57,7 @@ export const Navbar: React.FC = () => {
     const pageLinks = [
         { name: 'Blogs', href: '/blog' },
         { name: 'Calculator', href: '/calculator' },
+        { name: 'Food Cost Calculator', href: '/food-cost-calculator' },
     ];
 
     const desktopNavLinks = [
@@ -66,6 +67,7 @@ export const Navbar: React.FC = () => {
         { name: 'Pricing', href: '/#pricing' },
         { name: 'Blogs', href: '/blog' },
         { name: 'Calculator', href: '/calculator' },
+        { name: 'Food Cost Calculator', href: '/food-cost-calculator' },
     ];
 
     const currentPath = typeof window !== 'undefined' ? window.location.pathname : '';

@@ -14,6 +14,7 @@ import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
 import { Calculator } from './components/Calculator';
+import { FoodCostCalculator } from './components/FoodCostCalculator';
 
 function App() {
   const path = window.location.pathname;
@@ -32,6 +33,10 @@ function App() {
 
   if (path === '/calculator' || path === '/calculator/') {
     return <Calculator />;
+  }
+
+  if (path === '/food-cost-calculator' || path === '/food-cost-calculator/') {
+    return <FoodCostCalculator />;
   }
 
   if (path === '/blog' || path === '/blog/') {
