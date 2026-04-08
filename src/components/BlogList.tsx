@@ -5,6 +5,13 @@ import { Footer } from './Footer';
 
 const blogPosts = [
   {
+    title: "How to Increase Restaurant Sales on Weekends: 12 Proven Strategies for Indian Cafes and Restaurants in 2026",
+    excerpt: "Want to know how to increase restaurant sales on weekends without hiring more staff or raising prices? Here are 12 practical strategies Indian cafes and restaurants are using right now to turn weekend rushes into real profit.",
+    date: "April 8, 2026",
+    readTime: "11 min read",
+    slug: "how-to-increase-restaurant-sales-on-weekends"
+  },
+  {
     title: "Your QR Menu Is Showing Food. It Should Be Selling It.",
     excerpt: "Most QR menus in India just show food. The smart ones sell it. Here is exactly how restaurant and cafe owners are using QR menu upselling to increase average order value by 23% without hiring anyone new.",
     date: "March 23, 2026",

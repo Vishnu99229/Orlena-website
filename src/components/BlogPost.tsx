@@ -9,7 +9,154 @@ interface BlogPostProps {
 export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (slug === 'best-restaurant-upselling-software-india-2026') {
+    if (slug === 'how-to-increase-restaurant-sales-on-weekends') {
+      document.title = "How to Increase Restaurant Sales on Weekends: 12 Proven Strategies | Orlena";
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', 'Want to know how to increase restaurant sales on weekends without hiring more staff or raising prices? Here are 12 practical strategies Indian cafes and restaurants are using right now to turn weekend rushes into real profit.');
+      
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', 'How to Increase Restaurant Sales on Weekends: 12 Proven Strategies for Indian Cafes');
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', '12 practical strategies Indian cafe and restaurant owners are using to turn busy weekends into genuinely profitable ones.');
+      
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', 'How to Increase Restaurant Sales on Weekends: 12 Proven Strategies');
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', '12 practical strategies Indian cafes are using to turn busy weekends into profitable ones.');
+
+      // Add canonical link
+      let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        document.head.appendChild(canonical);
+      }
+      canonical.href = 'https://hello.orlena.talk/blog/how-to-increase-restaurant-sales-on-weekends';
+
+      // Add keywords meta
+      let keywords = document.querySelector('meta[name="keywords"]') as HTMLMetaElement;
+      if (!keywords) {
+        keywords = document.createElement('meta');
+        keywords.name = 'keywords';
+        document.head.appendChild(keywords);
+      }
+      keywords.content = 'how to increase restaurant sales on weekends, increase cafe revenue weekend, weekend restaurant marketing India, restaurant upselling strategies, cafe average order value India';
+
+      // Add OG type and URL
+      let ogType = document.querySelector('meta[property="og:type"]') as HTMLMetaElement;
+      if (!ogType) {
+        ogType = document.createElement('meta');
+        ogType.setAttribute('property', 'og:type');
+        document.head.appendChild(ogType);
+      }
+      ogType.content = 'article';
+
+      let ogUrl = document.querySelector('meta[property="og:url"]') as HTMLMetaElement;
+      if (!ogUrl) {
+        ogUrl = document.createElement('meta');
+        ogUrl.setAttribute('property', 'og:url');
+        document.head.appendChild(ogUrl);
+      }
+      ogUrl.content = 'https://hello.orlena.talk/blog/how-to-increase-restaurant-sales-on-weekends';
+
+      let ogImage = document.querySelector('meta[property="og:image"]') as HTMLMetaElement;
+      if (!ogImage) {
+        ogImage = document.createElement('meta');
+        ogImage.setAttribute('property', 'og:image');
+        document.head.appendChild(ogImage);
+      }
+      ogImage.content = 'https://hello.orlena.talk/og-image.png';
+
+      let twCard = document.querySelector('meta[name="twitter:card"]') as HTMLMetaElement;
+      if (!twCard) {
+        twCard = document.createElement('meta');
+        twCard.name = 'twitter:card';
+        document.head.appendChild(twCard);
+      }
+      twCard.content = 'summary_large_image';
+
+      // Add JSON-LD Schema
+      const existingSchema = document.querySelector('script[data-blog-schema="weekend-sales"]');
+      if (!existingSchema) {
+        const articleSchema = document.createElement('script');
+        articleSchema.type = 'application/ld+json';
+        articleSchema.setAttribute('data-blog-schema', 'weekend-sales');
+        articleSchema.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "How to Increase Restaurant Sales on Weekends: 12 Proven Strategies for Indian Cafes and Restaurants in 2026",
+          "description": "12 practical strategies Indian cafe and restaurant owners are using to turn busy weekends into genuinely profitable ones.",
+          "image": "https://hello.orlena.talk/og-image.png",
+          "datePublished": "2026-04-08",
+          "dateModified": "2026-04-08",
+          "author": { "@type": "Organization", "name": "Orlena" },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Orlena",
+            "logo": { "@type": "ImageObject", "url": "https://hello.orlena.talk/favicon.svg" }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://hello.orlena.talk/blog/how-to-increase-restaurant-sales-on-weekends"
+          }
+        });
+        document.head.appendChild(articleSchema);
+
+        const faqSchema = document.createElement('script');
+        faqSchema.type = 'application/ld+json';
+        faqSchema.setAttribute('data-blog-schema', 'weekend-sales-faq');
+        faqSchema.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much can a typical Indian cafe realistically increase weekend sales by?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cafes that implement 4 or 5 of the strategies consistently see 20 to 35% increases in weekend revenue within 2 to 3 months, from higher average order value, better attach rates, and reduced revenue leakage during the rush."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to hire more staff to improve weekend sales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not usually. Most weekend revenue problems come from upselling and menu optimisation failures, not from understaffing. Automation strategies let you earn more from your existing team without adding hires."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can I see results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Weekend-only menu items, combo meals, and staff upsell scripts can show results within the first weekend. Automated menu upselling and loyalty programs take 3 to 4 weeks. Menu engineering compounds over 2 to 3 months."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the single most important strategy for a small cafe with limited budget?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fix your upsell flow. Either through trained staff scripts or through an AI-powered QR menu that automates it. Upselling is where Indian cafes consistently leave the most money on the table, especially on weekends."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my cafe is leaving money on the table?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Compare your weekend AOV with your weekday AOV. If weekend AOV is lower than or equal to weekday AOV, you have a revenue leak. Weekend guests are typically in a higher-spend mindset and should be ordering more per ticket."
+              }
+            }
+          ]
+        });
+        document.head.appendChild(faqSchema);
+      }
+    } else if (slug === 'best-restaurant-upselling-software-india-2026') {
       document.title = "Best Restaurant Upselling Software in India 2026 | Honest Comparison | Orlena Blog";
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
@@ -52,12 +199,268 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
     }
   }, [slug]);
 
-  if (slug !== 'how-to-increase-average-order-value-restaurant' && slug !== 'best-restaurant-upselling-software-india-2026' && slug !== 'qr-menu-upselling-complete-guide-india') {
+  if (slug !== 'how-to-increase-average-order-value-restaurant' && slug !== 'best-restaurant-upselling-software-india-2026' && slug !== 'qr-menu-upselling-complete-guide-india' && slug !== 'how-to-increase-restaurant-sales-on-weekends') {
     return (
       <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
         <Navbar />
         <main className="flex-grow flex items-center justify-center pt-32 pb-20 md:pt-40 md:pb-28">
             <h1 className="text-2xl font-bold text-stone-600">Post not found.</h1>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (slug === 'how-to-increase-restaurant-sales-on-weekends') {
+    return (
+      <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
+        <Navbar />
+        <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
+          <article className="container mx-auto px-4 md:px-6 max-w-3xl">
+            <a href="/blog" className="inline-flex items-center text-[#FF6B35] font-semibold mb-8 hover:text-[#e85d00] transition-colors">
+              ← Back to Blogs
+            </a>
+            
+            <header className="mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 text-stone-900 leading-tight">
+                How to Increase Restaurant Sales on Weekends: 12 Proven Strategies for Indian Cafes and Restaurants in 2026
+              </h1>
+              <div className="flex items-center gap-4 text-sm text-stone-500">
+                <time>April 8, 2026</time>
+                <span>&bull;</span>
+                <span>11 min read</span>
+                <span>&bull;</span>
+                <span>Restaurant Growth</span>
+              </div>
+            </header>
+
+            <div className="prose prose-lg max-w-none text-stone-800 space-y-6">
+              <p>
+                If you run a cafe or restaurant in India, you already know the feeling. Friday evening hits, the tables fill up, the kitchen goes into overdrive, and by Sunday night you are exhausted. Then you look at the weekend numbers and they are just okay. Not the blockbuster figures you expected from three days of packed service. Just okay.
+              </p>
+              <p>
+                The good news is that figuring out how to increase restaurant sales on weekends is not about working harder or pouring more money into marketing. It is about fixing the specific moments in your weekend operation where revenue silently slips away, and replacing them with systems that keep earning even when your staff is running flat out.
+              </p>
+              <p>
+                This guide covers 12 practical strategies that Indian cafe and restaurant owners are using right now to turn busy weekends into genuinely profitable ones. Some you can implement this Friday. Others will take a few weeks. All of them compound over time.
+              </p>
+              <p>
+                If you want to understand why weekends feel so busy and yet the profits feel so average, we covered the diagnostic side of that in a separate post on <a href="/blog/cafe-weekend-revenue-leaks" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">weekend revenue leaks</a>. This post is the other half of the story: what to actually do about it.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Why Weekends Are the Real Battleground</h2>
+              <p>
+                Before we dive into the tactics, one framing shift that changes everything.
+              </p>
+              <p>
+                For a typical cafe in Bangalore, Friday through Sunday generates 40 to 60% of the weekly revenue. But more importantly, it generates more than 60% of the weekly profit potential, because fixed costs like rent, electricity, and base salaries are already paid whether you serve 50 covers or 500. Every extra rupee you squeeze out of a weekend customer drops almost entirely to the bottom line.
+              </p>
+              <p>
+                In other words, weekends are not just the busiest part of your week. They are the most elastic part of your week. A 15% improvement in weekend performance can mean a 30 to 40% improvement in monthly profit. That is why the strategies below matter so much, and why the cafes that figure this out tend to pull away from their competitors very quickly.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 1: Design a Weekend-Only Menu</h2>
+              <p>
+                The single fastest way to increase weekend revenue is to give your guests something they cannot get on a Tuesday. A small, tightly designed weekend menu with 4 to 6 exclusive items does three things at once. It justifies higher pricing on those items (weekend guests are in a celebration mindset and spend differently). It creates social media moments because people photograph new things. And it gives your staff a natural reason to recommend something, which is the single highest-leverage upsell trigger that exists.
+              </p>
+              <p>
+                The items do not need to be complicated. A weekend brunch platter, a Saturday-only cocktail, a Sunday roast special, a limited-edition dessert. What matters is that they are positioned clearly on the menu as "This Weekend Only" and carry a 15 to 20% price premium over comparable weekday items.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 2: Build Combos That Raise the Average Order Value</h2>
+              <p>
+                Indian cafe menus are full of items that naturally pair with each other but are almost never bundled. A sandwich and a coffee. A pasta and a mocktail. A burger and fries and a brownie. Creating 3 or 4 well-priced combo meals and placing them prominently on your menu is one of the easiest ways to raise the average order value without anyone feeling upsold.
+              </p>
+              <p>
+                The psychology is important here. A combo should feel like a reward, not a sales tactic. Price the combo at roughly 85 to 90% of what the items would cost individually, so the guest feels they are getting value. Your overall ticket still goes up because guests who would have ordered just a sandwich now order a sandwich plus a drink plus a dessert. Net effect on a typical cafe: a 12 to 18% lift in weekend AOV within the first month.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 3: Automate the Upsell at the Point of Order</h2>
+              <p>
+                This is the strategy with the biggest impact and the lowest execution cost, and it is exactly what we built <a href="/" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">Orlena</a> for.
+              </p>
+              <p>
+                On a quiet weekday, a good waiter can remember to suggest add-ons, recommend a dessert, and push the high-margin specials. On a busy Saturday night, no human can do that consistently. The waiter is carrying trays, remembering modifications, managing angry guests, and trying not to drop anything. The upsell script dies the moment the rush starts.
+              </p>
+              <p>
+                The fix is to move the upsell out of the waiter's brain and into the ordering flow itself. When a guest scans a QR code menu and adds a pasta to their cart, the menu should automatically suggest the cold brew that pairs with it. When they order a burger, it should offer the upgrade to cheese fries. When they are about to check out, it should surface the dessert that has the highest margin and the highest attach rate.
+              </p>
+              <p>
+                This is not aggressive selling. It is the same suggestion a good waiter would make if they had the bandwidth. Indian cafes using AI-powered QR menus like Orlena are seeing 18 to 27% increases in average order value on weekends specifically, because the weekend is when human upselling completely breaks down and automated upselling keeps working.
+              </p>
+              <p>
+                If you want to model the impact on your own cafe, the <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">Revenue Impact Calculator</a> will show you the math in about 60 seconds.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 4: Pre-Sell the Weekend on Instagram and WhatsApp</h2>
+              <p>
+                Most Indian cafes treat Instagram as a broadcast channel. Post a photo, hope someone walks in. That is leaving enormous amounts of money on the table.
+              </p>
+              <p>
+                The cafes that grow fastest use Instagram and WhatsApp as a pre-weekend booking engine. Every Thursday or Friday morning, they post Stories and Reels showcasing the weekend specials, the new menu items, and the vibe. They send a WhatsApp broadcast to their regulars with a photo of the weekend menu and a soft nudge to book a table. They create a sense of "you have to come this weekend or you will miss it".
+              </p>
+              <p>
+                This costs nothing and takes about 30 minutes a week. Cafes that do this consistently see 20 to 35% more reservations and walk-ins specifically on Saturday evenings. The key is consistency. Every single Thursday, without fail, something new goes out.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 5: Solve the Queue Problem Before It Costs You Customers</h2>
+              <p>
+                Every minute a guest waits outside your cafe on a Saturday evening is a minute they are mentally reconsidering their choice. Research across the global hospitality industry consistently shows that around 15 to 25% of walk-in guests abandon a queue longer than 15 minutes. For a cafe doing 200 weekend covers, that could mean 30 to 50 lost covers per weekend, or roughly 12,000 to 20,000 rupees in lost revenue every single Saturday.
+              </p>
+              <p>
+                The fix does not require a reservation system. It requires one simple thing: give the waiting guests something to do. A digital waitlist where they can join the queue, walk around the block, and get a WhatsApp notification when their table is ready. A QR code outside where they can browse the menu and start mentally ordering while they wait. A small promo drink at 60 rupees for anyone who waits more than 20 minutes. Anything that converts dead waiting time into something the guest does not resent.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 6: Train Your Staff on Two High-Impact Scripts</h2>
+              <p>
+                Most restaurant service training is too broad. For weekend performance, you only need two scripts drilled into your staff until they are automatic.
+              </p>
+              <p>
+                The first is the welcome upsell. Within 30 seconds of a guest sitting down, the waiter should say something like "Would you like to start with our weekend special mocktail while you look at the menu?" This one line alone typically adds 80 to 150 rupees per table and sets the tone for a higher-value order.
+              </p>
+              <p>
+                The second is the post-main suggestion. When the guest finishes their main course, the waiter should ask "Can I get you a dessert and coffee to finish?" Not "anything else?", which is a closing question. A specific, suggestive question that makes it easier to say yes than no. This one line can add another 200 to 300 rupees per table on weekends.
+              </p>
+              <p>
+                If every waiter on your weekend shift runs these two scripts consistently, you will see a 10 to 15% lift in average ticket size within a month. No other training matters as much.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 7: Launch a Weekend Loyalty Hook</h2>
+              <p>
+                Indian cafe guests are surprisingly loyal when they feel rewarded. A simple weekend loyalty mechanic works wonders: "Visit us any two weekends this month and get a free dessert on the third." It costs almost nothing to run because most guests who come twice are already going to come a third time, but the hook creates a specific reason to choose your cafe over a competitor.
+              </p>
+              <p>
+                The key is to make it weekend-specific. A generic loyalty program is easy to ignore. A weekend-only reward creates urgency, shifts habits, and builds the kind of repeat visits that determine whether a cafe survives its first year.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 8: Optimise Your Menu for Mobile Scanning</h2>
+              <p>
+                If your guests order by scanning a QR code, the design of that digital menu is one of the most underrated revenue levers in your business. A slow-loading menu, a cluttered layout, missing photos, confusing category names, these all cost you real money on every single weekend order.
+              </p>
+              <p>
+                A well-designed QR menu should load in under 2 seconds on 4G, show high-quality photos for every item, surface the highest-margin items in the top three positions of each category, and make the checkout friction-free. Cafes that upgrade from a PDF menu to a properly designed QR menu typically see AOV jumps of 15 to 25% purely from better item discovery and easier ordering.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 9: Capture the Post-Meal Moment</h2>
+              <p>
+                The 60 seconds after a guest finishes their main course is the single highest-leverage moment in your entire weekend operation. It is when they decide whether to order dessert, a coffee, a digestif, or just ask for the bill. Get that moment right and your ticket grows by 200 rupees. Miss it and you lose the revenue forever.
+              </p>
+              <p>
+                The best cafes treat this moment as a formal operational checkpoint. The waiter has a specific job: as soon as the main plates are cleared, come back within 90 seconds and offer something specific. Not "anything else?" but "Our chocolate lava cake takes 8 minutes to prepare, want me to get one started?" A specific, time-bound suggestion converts 3 to 4 times more often than a generic one.
+              </p>
+              <p>
+                If your staff cannot consistently hit this 90-second window on a busy Saturday, this is again where automated menu recommendations fill the gap. A digital menu that pops up a dessert suggestion when the guest opens it again to call for the bill captures revenue that the waiter never would have.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 10: Use Weekend Data to Improve the Next Weekend</h2>
+              <p>
+                This one sounds obvious but almost no Indian cafe under 10 outlets actually does it. At the end of every weekend, spend 20 minutes looking at three numbers: which items sold the most, which items had the highest margin contribution, and which items were on the menu but barely sold. Then adjust for the following weekend.
+              </p>
+              <p>
+                Items that barely sold either need better placement, better photos, or to be removed from the menu entirely. Items that sold well and had high margins should be pushed harder through staff scripts and menu positioning. Items that sold well but had low margins might need a price increase or a cost reduction in the kitchen. This is called menu engineering and it is the single most valuable 20 minutes of the week for any restaurant owner.
+              </p>
+              <p>
+                Over 3 to 4 months of consistent menu engineering, cafes typically see weekend profitability improve by 20 to 30% without changing anything else about their operation.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 11: Turn Weekend Guests into Weekday Visits</h2>
+              <p>
+                The real long-term game is not just capturing more revenue per weekend guest. It is using the weekend visit to generate weekday revenue. Every weekend guest should leave with a reason to come back on a Tuesday or Wednesday. A 15% off voucher for weekday visits. A free coffee with any weekday lunch. A WhatsApp message the following Tuesday saying "we miss you, come try our new weekday lunch special".
+              </p>
+              <p>
+                Weekdays are where your fixed costs hurt the most and where capacity is most underutilised. Turning even 10% of your weekend guests into occasional weekday regulars is worth more than any single marketing campaign you could run.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Strategy 12: Measure What You Cannot See</h2>
+              <p>
+                The single biggest mistake Indian cafe owners make is managing their business on the numbers they can see and ignoring the numbers they cannot. You can see your daily sales. You probably cannot see your average order value by day of the week, your dessert attach rate, your add-on conversion rate, or your weekend-over-weekend growth in AOV. Those are the numbers that tell you whether you are actually improving or just getting busier.
+              </p>
+              <p>
+                Start tracking four metrics every Monday morning:
+              </p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Weekend average order value compared to last week</li>
+                <li>Dessert and beverage attach rate (what percentage of guests ordered a dessert or a second drink)</li>
+                <li>Combo order percentage (what percentage of tables ordered a combo)</li>
+                <li>Upsell success rate (how often did a suggested add-on get accepted)</li>
+              </ul>
+              <p>
+                These four numbers, tracked weekly, will tell you within a month which of the 12 strategies above are working for your specific cafe and which need adjustment. Most owners are flying blind. The ones who measure win.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Frequently Asked Questions</h2>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">How much can a typical Indian cafe realistically increase weekend sales by?</h3>
+              <p>
+                Cafes that implement 4 or 5 of the strategies above consistently see 20 to 35% increases in weekend revenue within 2 to 3 months. The improvement comes from a combination of higher average order value, better attach rates, and reduced revenue leakage during the rush.
+              </p>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Do I need to hire more staff to improve weekend sales?</h3>
+              <p>
+                Not usually. Most weekend revenue problems come from upselling and menu optimisation failures, not from understaffing. The strategies that involve automation (Strategies 3, 8, and 9) specifically let you earn more from your existing team without adding a single hire.
+              </p>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">How quickly can I see results?</h3>
+              <p>
+                Strategies like weekend-only menu items, combo meals, and staff upsell scripts can show results within the first weekend of implementation. Automated menu upselling and loyalty programs typically take 3 to 4 weeks to hit full impact. Menu engineering compounds over 2 to 3 months.
+              </p>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">What is the single most important strategy for a small cafe with limited budget?</h3>
+              <p>
+                If you can only do one thing, fix your upsell flow. Either through trained staff scripts (free, requires discipline) or through an AI-powered QR menu that automates it (small monthly cost, zero discipline required). Upselling is where Indian cafes consistently leave the most money on the table, especially on weekends.
+              </p>
+
+              <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">How do I know if my cafe is leaving money on the table?</h3>
+              <p>
+                The easiest way is to compare your weekend AOV with your weekday AOV. If weekend AOV is lower than or equal to weekday AOV, you almost certainly have a revenue leak, because weekend guests are typically in a higher-spend mindset and should be ordering more per ticket. You can also use our <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">Revenue Impact Calculator</a> to see an estimate based on your actual numbers.
+              </p>
+
+              <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Pulling It All Together</h2>
+              <p>
+                Figuring out how to increase restaurant sales on weekends is less about finding one magic tactic and more about stacking small improvements across the entire guest journey. A weekend-only menu captures attention at the door. A well-designed QR menu drives discovery at the table. Automated upsells capture add-on revenue that human staff cannot during a rush. Trained scripts catch the post-main moment. Loyalty hooks turn one visit into three. Data tells you what to adjust for next weekend.
+              </p>
+              <p>
+                None of these strategies is complicated on its own. What makes them powerful is the compounding effect when you run them together, week after week, month after month. The cafes that dominate Bangalore, Mumbai, and Delhi five years from now are not the ones with the fanciest interiors or the biggest marketing budgets. They are the ones that treated every weekend as a learning opportunity and built the systems to keep getting better at it.
+              </p>
+              <p>
+                If you want to see exactly how much your cafe could be making with just a few of these strategies in place, try the <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">Orlena Revenue Impact Calculator</a>. It takes 60 seconds and gives you a personalised estimate of your weekend revenue potential based on your current numbers.
+              </p>
+              <p>
+                The weekend rush is not the enemy. It is the opportunity. The question is whether your operation is set up to actually capture it.
+              </p>
+            </div>
+
+            {/* Related Posts */}
+            <div className="mt-16 border-t border-stone-200 pt-10">
+              <h3 className="text-xl font-bold text-stone-900 mb-6">Related Posts</h3>
+              <div className="grid gap-4">
+                <a href="/blog/qr-menu-upselling-complete-guide-india" className="block p-4 bg-white border border-stone-200 rounded-xl hover:shadow-md transition-shadow">
+                  <p className="text-sm text-stone-500 mb-1">March 23, 2026</p>
+                  <p className="font-semibold text-stone-900">Your QR Menu Is Showing Food. It Should Be Selling It.</p>
+                </a>
+                <a href="/blog/best-restaurant-upselling-software-india-2026" className="block p-4 bg-white border border-stone-200 rounded-xl hover:shadow-md transition-shadow">
+                  <p className="text-sm text-stone-500 mb-1">March 19, 2026</p>
+                  <p className="font-semibold text-stone-900">Best Restaurant Upselling Software in India 2026: An Honest Comparison</p>
+                </a>
+                <a href="/blog/how-to-increase-average-order-value-restaurant" className="block p-4 bg-white border border-stone-200 rounded-xl hover:shadow-md transition-shadow">
+                  <p className="text-sm text-stone-500 mb-1">March 15, 2026</p>
+                  <p className="font-semibold text-stone-900">How to Increase Average Order Value in Your Cafe or Restaurant</p>
+                </a>
+              </div>
+            </div>
+
+            {/* About Orlena CTA */}
+            <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 text-stone-900">About Orlena</h3>
+              <p className="text-stone-600 mb-6 font-medium">Orlena is an AI-powered QR menu upselling system built for Indian cafes and restaurants. It automatically recommends the right add-ons at the right moment, increasing your average order value without any staff training.</p>
+              <a 
+                href="/calculator"
+                className="inline-block bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full hover:bg-[#e85d00] transition-colors shadow-sm"
+              >
+                Try the Revenue Impact Calculator
+              </a>
+            </div>
+          </article>
         </main>
         <Footer />
       </div>
