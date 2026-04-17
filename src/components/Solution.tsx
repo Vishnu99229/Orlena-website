@@ -6,18 +6,18 @@ import { BrainCircuit, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
 const features = [
     {
         icon: <BrainCircuit className="w-6 h-6" />,
-        title: "AI-Powered QR Menu Insights",
-        description: "Our AI-powered QR menu tracks ordering patterns across tables and time slots to surface what guests actually want next, capturing every upsell opportunity."
+        title: "Customer Personality Recognition",
+        description: "Orlena learns what each customer tends to like, picks up on how their preferences shift across visits, and recognises patterns a human host could not possibly hold in their head across hundreds of regulars."
     },
     {
         icon: <TrendingUp className="w-6 h-6" />,
-        title: "High-Margin Item Promotion Restaurant Ready",
-        description: "Achieve high-margin item promotion restaurant wide by automatically promoting your most profitable sides, drinks, and desserts at the exact right moment."
+        title: "Recommendations That Actually Fit",
+        description: "When a recommendation genuinely fits a customer, they accept it, often gratefully. It is the difference between being sold to and being hosted."
     },
     {
         icon: <Sparkles className="w-6 h-6" />,
-        title: "Automated Restaurant Upselling Adapts",
-        description: "Powered by smart logic, this automated restaurant upselling learns from guest behavior, improving results daily without any manual input."
+        title: "Intelligence That Compounds",
+        description: "Every visit sharpens the system. Over time, your cafe sees its customer base as groups with distinct personality, not faceless transactions on a screen."
     },
 ];
 
@@ -29,16 +29,16 @@ export const Solution: React.FC = () => {
                 <div>
                     <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
                         <Sparkles size={14} />
-                        <span>AI-Powered QR Menu</span>
+                        <span>Customer Intelligence</span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        A System Designed To <br />
-                        <span className="text-primary">Increase Average Order Value.</span>
+                        A System That <br />
+                        <span className="text-primary">Knows Each Customer.</span>
                     </h2>
 
                     <p className="text-xl text-text mb-8 leading-relaxed">
-                        If your venue serves 80 tables a day and uses our digital menu upsell to add just ₹60 per order, that’s over ₹1.4 lakh in additional monthly revenue, with zero extra staff effort.
+                        Orlena reads customers not as tickets but as personalities with shape and character. A customer who orders a flat white and a sourdough every Sunday morning stops being a repeat transaction and becomes a specific person with a specific rhythm. Every interaction gets sharper because of it.
                     </p>
 
                     <div className="space-y-6">

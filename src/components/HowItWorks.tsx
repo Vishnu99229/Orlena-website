@@ -7,20 +7,20 @@ const steps = [
     {
         icon: <QrCode className="w-8 h-8 text-primary" />,
         step: "Step 01",
-        title: "Guest Scans QR Code Menu For Restaurants",
-        description: "Instant access to your digital menu. No app download. No friction. The best restaurant ordering system ensures every table is ready to order in seconds."
+        title: "Customer Begins Ordering",
+        description: "The moment they start ordering, Orlena begins noticing. No app download, no friction, just presence at the table."
     },
     {
         icon: <Sparkles className="w-8 h-8 text-primary" />,
         step: "Step 02",
-        title: "Automated Restaurant Upselling",
-        description: "Orlena intelligently suggests profitable add-ons based on behavior patterns and menu context, powering an AI-powered QR menu experience."
+        title: "Orlena Learns And Remembers",
+        description: "Every order, pairing, and visit builds a deeper understanding of who the customer is. Personality, taste, rhythm, mood, all held in memory."
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-primary" />,
         step: "Step 03",
-        title: "Café Revenue Increase Achieved",
-        description: "Each table generates more revenue automatically, ensuring a steady café revenue increase without extra staff training or operational changes."
+        title: "Retention Deepens, AOV Lifts",
+        description: "Customers return more often because the cafe starts feeling like it knows them. And when recommendations actually fit, they accept them gratefully."
     }
 ];
 
@@ -29,10 +29,10 @@ export const HowItWorks: React.FC = () => {
         <Section background="beige" id="how-it-works">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    How Our <span className="text-primary">QR Menu Upselling</span> Works
+                    How <span className="text-primary">Orlena</span> Works
                 </h2>
                 <p className="text-xl text-text">
-                    Three steps. Zero training. Measurable restaurant revenue optimization from day one.
+                    Three steps. Zero training. Customer intelligence from day one.
                 </p>
             </div>
 

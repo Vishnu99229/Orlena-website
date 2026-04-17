@@ -14,11 +14,11 @@ export const Results: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                        <span className="text-primary">Increase Average Order Value.</span> <br />
-                        No Guesswork.
+                        <span className="text-primary">Retention That Compounds.</span> <br />
+                        AOV That Follows.
                     </h2>
                     <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                        With our digital menu upsell, increase average order value by 10-20%. Promote high-margin items automatically. Capture guest data for smarter repeat visits. No additional staff training required.
+                        With Orlena, average order value lifts 10 to 20 percent. Not from pressure or upsell scripts, but from recommendations customers genuinely want. Meanwhile, retention deepens because your cafe starts feeling like it knows them.
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">

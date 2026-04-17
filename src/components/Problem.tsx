@@ -6,18 +6,18 @@ import { AlertCircle, TrendingDown, Users } from 'lucide-react';
 const problems = [
     {
         icon: <Users className="w-8 h-8 text-red-500" />,
-        title: "Ineffective Contactless Ordering Upsell",
-        description: "Your team is busy. Even well-trained servers miss upsell opportunities at 70%+ of tables. A standard menu without AI upsell for restaurants costs you revenue every shift."
+        title: "Your Regulars Are Invisible",
+        description: "A customer who visits three times a week is just another ticket on the POS. The relationship you have built becomes invisible to your own cafe."
     },
     {
         icon: <AlertCircle className="w-8 h-8 text-orange-500" />,
-        title: "Missing Restaurant Cross-Selling Software",
-        description: "Without dedicated restaurant cross-selling software, your most profitable sides, drinks, and desserts sit buried in the menu. Guests default to what they already know."
+        title: "No Memory Across Visits",
+        description: "Staff cannot hold the preferences of hundreds of regulars in their head. Every visit starts from zero, and every recommendation is a guess."
     },
     {
         icon: <TrendingDown className="w-8 h-8 text-gray-500" />,
-        title: "Zero Restaurant Revenue Optimization",
-        description: "Without behavioral data from every table, there's no system for restaurant revenue optimization to improve your menu, pricing, or promotions over time."
+        title: "Guesswork At Every Decision",
+        description: "Menu design, seasonal offerings, loyalty logic, space planning. Without customer truth, every downstream decision is built on guesswork."
     }
 ];
 
@@ -26,10 +26,10 @@ export const Problem: React.FC = () => {
         <Section background="beige" className="relative">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                    Without <span className="text-primary">QR Menu Upselling</span>, You Leave Money on the Table.
+                    Customer Experience Today Is <span className="text-primary">Mostly Performed.</span>
                 </h2>
                 <p className="text-xl text-text">
-                    A PDF on a QR code doesn't upsell, doesn't learn, and doesn't grow your revenue. It's a missed opportunity at every table without an automated restaurant upselling system in place.
+                    Smiles, ambiance, plating, craft. What almost no cafe has is the next layer. A system that genuinely knows each customer as an individual. Their taste, their rhythm, their mood, the personality behind the order.
                 </p>
             </div>
 
