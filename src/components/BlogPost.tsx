@@ -722,7 +722,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
 
             <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
               <h3 className="text-2xl font-bold mb-4 text-stone-900">Ready to increase your restaurant's average order value?</h3>
-              <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
+              <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 10-20%.</p>
               <a 
                 href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
                 target="_blank" 
@@ -948,7 +948,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
 
             <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
               <h3 className="text-2xl font-bold mb-4 text-stone-900">Ready to increase your restaurant&apos;s average order value?</h3>
-              <p className="text-stone-600 mb-6 font-medium">See how Orlena&apos;s AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
+              <p className="text-stone-600 mb-6 font-medium">See how Orlena&apos;s AI upselling system automates cross-selling recommendations and boosts your revenue by 10-20%.</p>
               <a 
                 href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
                 target="_blank" 
@@ -994,7 +994,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
             </p>
 
             <p>
-              Indian restaurants saw a 37-40% higher average check value after implementing digital menus and QR codes. Yet most cafe and restaurant owners in Bangalore, Mumbai, Delhi, and across India are still leaving that revenue on the table every single day.
+              Indian restaurants saw a 10-20% higher average check value after implementing digital menus and QR codes. Yet most cafe and restaurant owners in Bangalore, Mumbai, Delhi, and across India are still leaving that revenue on the table every single day.
             </p>
 
             <p>
@@ -1012,7 +1012,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">1. Use AI-Powered QR Menu Upselling</h2>
             <p>This is the single highest-impact strategy available to restaurant owners in 2026. Traditional QR menus are just digital PDFs. They display your menu but do nothing to increase what a customer orders. An AI-powered QR menu upselling system like Orlena works differently. It automatically recommends high-margin add-ons, sides, and drinks at the exact moment a customer is browsing, based on what they have already selected.</p>
             <p>A customer orders a cold coffee. The system suggests a chocolate brownie at a 90% preference match. A customer orders pasta. The system recommends garlic bread and a mocktail. These are not random suggestions. They are data-driven restaurant cross-selling recommendations that convert at significantly higher rates than staff-driven upselling.</p>
-            <p>The result is a consistent 37-40% increase in average order value across every table, every shift, with zero staff training required. For cafes in Bangalore neighborhoods like Koramangala, Indiranagar, and HSR Layout where footfall is high and competition is fierce, this kind of automated revenue optimization is no longer optional. It is a competitive necessity.</p>
+            <p>The result is a consistent 10-20% increase in average order value across every table, every shift, with zero staff training required. For cafes in Bangalore neighborhoods like Koramangala, Indiranagar, and HSR Layout where footfall is high and competition is fierce, this kind of automated revenue optimization is no longer optional. It is a competitive necessity.</p>
 
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">2. Train Your Staff to Upsell Consistently</h2>
             <p>Even with the best restaurant upselling system in place, your staff remains a critical touchpoint. The problem is consistency. Research consistently shows that servers miss upsell opportunities at over 70% of tables, not because they do not want to upsell but because they are busy, distracted, or simply forget.</p>
@@ -1039,7 +1039,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
 
             <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">The Bottom Line</h2>
             <p>Increasing average order value in your cafe or restaurant does not require more customers, more marketing spend, or more staff. It requires a smarter system at the point of ordering.</p>
-            <p>The most effective combination in 2026 is an AI-powered QR menu upselling system that automates cross-selling recommendations, combined with well-engineered menu design and basic staff upsell training. Together these strategies can realistically increase your average order value by 37-40% within the first month.</p>
+            <p>The most effective combination in 2026 is an AI-powered QR menu upselling system that automates cross-selling recommendations, combined with well-engineered menu design and basic staff upsell training. Together these strategies can realistically increase your average order value by 10-20% within the first month.</p>
             <p>For cafe and restaurant owners in Bangalore, Mumbai, Pune, Hyderabad, and across India, the window to adopt this technology before your competitors do is still open. It will not stay open for long.</p>
           </div>
 
@@ -1072,7 +1072,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
 
           <div className="mt-16 p-8 bg-[#FFF5F1] rounded-2xl border border-[#FFE4D6] text-center shadow-sm">
             <h3 className="text-2xl font-bold mb-4 text-stone-900">Want to increase your restaurant's average order value?</h3>
-            <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 37-40%.</p>
+            <p className="text-stone-600 mb-6 font-medium">See how Orlena's AI upselling system automates cross-selling recommendations and boosts your revenue by 10-20%.</p>
             <a 
               href="https://cal.com/vishnu-rajan-3siibd/secret?overlayCalendar=true" 
               target="_blank" 
