@@ -20,16 +20,16 @@ export const Hero: React.FC = () => {
                 >
                     <div className="inline-flex items-center space-x-2 bg-orange-50 text-primary px-3 py-1 rounded-full text-sm font-medium mb-6 border border-orange-100">
                         <span className="flex h-1.5 w-1.5 rounded-full bg-primary"></span>
-                        <span>AI concierge for cafes</span>
+                        <span>AI agent for cafes</span>
                     </div>
 
                     <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 text-white md:text-secondary">
-                        An AI Concierge For Your <br />
-                        <span className="text-gradient">Cafe.</span>
+                        Deploy an AI Agent at <br />
+                        <span className="text-gradient">Every Table.</span>
                     </h1>
 
                     <p className="text-base md:text-xl text-[#94A3B8] md:text-text mt-4 md:mt-0 mb-8 max-w-sm md:max-w-lg mx-auto md:mx-0 leading-relaxed">
-                        Orlena is a thinking layer between your cafe and every customer who walks in. It notices them. It remembers them. Over time, it builds a quiet understanding of who each of your customers actually is.
+                        Orlena runs as an AI agent inside your QR menu, reading every order in real time and suggesting the perfect pairing. Your AOV lifts 10 to 20 percent in the first month. No hardware. No POS change.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8 md:mt-0">

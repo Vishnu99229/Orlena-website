@@ -13,13 +13,13 @@ const steps = [
     {
         icon: <Sparkles className="w-8 h-8 text-primary" />,
         step: "Step 02",
-        title: "Orlena Learns And Remembers",
-        description: "Every order, pairing, and visit builds a deeper understanding of who the customer is. Personality, taste, rhythm, mood, all held in memory."
+        title: "The Agent Reads Context",
+        description: "Every order, pairing, and visit sharpens the agent. It understands rhythm, taste, and timing in a way a human host cannot hold across hundreds of regulars."
     },
     {
         icon: <BarChart3 className="w-8 h-8 text-primary" />,
         step: "Step 03",
-        title: "Retention Deepens, AOV Lifts",
+        title: "Orders Lift, The Agent Keeps Learning",
         description: "Customers return more often because the cafe starts feeling like it knows them. And when recommendations actually fit, they accept them gratefully."
     }
 ];

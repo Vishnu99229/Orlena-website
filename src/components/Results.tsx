@@ -3,7 +3,7 @@ import { Section } from './ui/Section';
 import { motion } from 'framer-motion';
 
 const metrics = [
-    { value: "37-40%", label: "Increase in Average Order Value" },
+    { value: "10-20%", label: "Increase in Average Order Value" },
     { value: "100%", label: "Tables Covered By Restaurant Ordering System" },
     { value: "0", label: "Staff Training Required For QR Menu Upselling" }
 ];
