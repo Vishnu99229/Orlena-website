@@ -1,1 +1,21 @@
-{"rewrites":[{"source":"/(.*)", "destination":"/index.html"}]}
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://orlena.talk/$1",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "hello.orlena.talk"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
