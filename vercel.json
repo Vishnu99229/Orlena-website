@@ -1,6 +1,45 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://app.orlena.talk/?restaurant=$restaurant&table=$table&tab=$tab",
+      "permanent": false,
+      "has": [
+        {
+          "type": "query",
+          "key": "restaurant",
+          "value": "(?<restaurant>.*)"
+        },
+        {
+          "type": "query",
+          "key": "table",
+          "value": "(?<table>.*)"
+        },
+        {
+          "type": "query",
+          "key": "tab",
+          "value": "(?<tab>.*)"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "destination": "https://app.orlena.talk/?restaurant=$restaurant&table=$table",
+      "permanent": false,
+      "has": [
+        {
+          "type": "query",
+          "key": "restaurant",
+          "value": "(?<restaurant>.*)"
+        },
+        {
+          "type": "query",
+          "key": "table",
+          "value": "(?<table>.*)"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "destination": "https://orlena.talk/$1",
       "permanent": true,
