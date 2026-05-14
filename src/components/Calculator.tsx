@@ -336,7 +336,7 @@ export const Calculator: React.FC = () => {
                         <Button
                             variant="outline"
                             size="lg"
-                            href="https://hello.orlena.talk/#how-it-works"
+                            href="https://orlena.talk/#how-it-works"
                             className="!border-[#FF6B35] !text-[#FF6B35] hover:!bg-[#FF6B35]/5"
                         >
                             See How It Works

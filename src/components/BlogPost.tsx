@@ -22,18 +22,18 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
           "@type": "Article",
           "headline": "How to Increase Restaurant Sales on Weekends: 12 Proven Strategies for Indian Cafes and Restaurants in 2026",
           "description": "12 practical strategies Indian cafe and restaurant owners are using to turn busy weekends into genuinely profitable ones.",
-          "image": "https://hello.orlena.talk/og-image.png",
+          "image": "https://orlena.talk/og-image.png",
           "datePublished": "2026-04-08",
           "dateModified": "2026-04-08",
           "author": { "@type": "Organization", "name": "Orlena" },
           "publisher": {
             "@type": "Organization",
             "name": "Orlena",
-            "logo": { "@type": "ImageObject", "url": "https://hello.orlena.talk/favicon.svg" }
+            "logo": { "@type": "ImageObject", "url": "https://orlena.talk/favicon.svg" }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://hello.orlena.talk/blog/how-to-increase-restaurant-sales-on-weekends"
+            "@id": "https://orlena.talk/blog/how-to-increase-restaurant-sales-on-weekends"
           }
         });
         document.head.appendChild(articleSchema);
@@ -451,7 +451,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
                 That is not a projection. That is the math on a 23% increase in average order value, which is the average result Orlena produces across cafes and restaurants using the system.
               </p>
               <p>
-                Want to see what this looks like for your specific cafe? Use the calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a> - enter your tables and average bill and you will see your exact number in 30 seconds.
+                Want to see what this looks like for your specific cafe? Use the calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">orlena.talk/calculator</a> - enter your tables and average bill and you will see your exact number in 30 seconds.
               </p>
 
               <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">What Gets Upsold and What Does Not</h2>
@@ -569,7 +569,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
               <p>Identify your top 10 selling items. For each one, write down the most logical add-on or upgrade. That is your upsell map.</p>
               
               <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 2: Calculate your current missed revenue</h3>
-              <p>Before you invest in any system, know what you are leaving on the table. Use the free calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a>. Enter your tables per day and average bill. The number that comes up is your monthly missed revenue at current conversion rates.</p>
+              <p>Before you invest in any system, know what you are leaving on the table. Use the free calculator at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">orlena.talk/calculator</a>. Enter your tables per day and average bill. The number that comes up is your monthly missed revenue at current conversion rates.</p>
               
               <h3 className="text-xl font-bold text-stone-900 mt-6 mb-2">Step 3: Choose a QR upselling system built for Indian restaurants</h3>
               <p>Not all QR menu systems have upselling built in. Most are just digital menus. Look specifically for a system that has AI-driven upsell suggestions, Indian payment integration, works on any smartphone without app download, and gives you analytics on what is being upsold.</p>
@@ -589,7 +589,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
               <p>Cafes using Orlena see an average 23% increase in order value within the first two weeks.</p>
               <p>See what Orlena could do for your cafe:</p>
               <ul className="list-disc pl-5 space-y-2 mb-6">
-                <li>Calculate your missed revenue at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">hello.orlena.talk/calculator</a></li>
+                <li>Calculate your missed revenue at <a href="/calculator" className="text-[#FF6B35] font-semibold hover:text-[#e85d00] transition-colors">orlena.talk/calculator</a></li>
                 <li>Read what other restaurant owners are saying:</li>
               </ul>
             </div>
@@ -746,7 +746,7 @@ export const BlogPost: React.FC<BlogPostProps> = ({ slug }) => {
               <ul className="list-disc pl-5 space-y-2 mt-2">
                 <li><strong>Best for:</strong> Cafes and restaurants that want to increase average order value automatically.</li>
                 <li><strong>Limitation:</strong> Focused on upselling specifically. Not a full POS or billing system. Most cafes use it alongside their existing POS.</li>
-                <li><strong>Pricing:</strong> See <a href="https://hello.orlena.talk/pricing" className="text-primary underline" target="_blank" rel="noopener noreferrer">hello.orlena.talk/pricing</a></li>
+                <li><strong>Pricing:</strong> See <a href="https://orlena.talk/pricing" className="text-primary underline" target="_blank" rel="noopener noreferrer">orlena.talk/pricing</a></li>
               </ul>
 
               <h2 className="text-2xl font-bold text-stone-900 mt-10 mb-4">Comparison Table</h2>
