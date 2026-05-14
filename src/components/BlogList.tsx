@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import SEO from './SEO';
 
 const blogPosts = [
   {
@@ -35,12 +36,13 @@ const blogPosts = [
 ];
 
 export const BlogList: React.FC = () => {
-  useEffect(() => {
-    document.title = "Blogs | Orlena";
-  }, []);
-
   return (
     <div className="min-h-screen bg-[#FAFAFA] flex flex-col">
+      <SEO
+        title="Blogs | Orlena"
+        description="Read the latest articles and guides on how to increase your cafe's average order value and profitability."
+        canonical="https://orlena.talk/blog"
+      />
       <Navbar />
       <main className="flex-grow pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">

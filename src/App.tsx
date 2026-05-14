@@ -1,4 +1,5 @@
 import { Navbar } from './components/Navbar';
+import SEO from './components/SEO';
 import { Hero } from './components/Hero';
 import { Problem } from './components/Problem';
 import { Solution } from './components/Solution';
@@ -49,6 +50,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden" role="main">
+      <SEO
+        title="Orlena | AI Agent That Increases Restaurant Average Order Value"
+        description="Orlena is an AI agent that lives inside your QR menu. Reads every order, recommends the perfect pairing, lifts AOV 10-20% in the first month. Built for independent cafes in India. No hardware. No staff training."
+        canonical="https://orlena.talk/"
+      />
       <Navbar />
       <Hero />
       <Problem />

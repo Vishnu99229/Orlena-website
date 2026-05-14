@@ -4,6 +4,7 @@ import { Footer } from './Footer';
 import { motion } from 'framer-motion';
 import { Button } from './ui/Button';
 import { Plus, Trash2, ChevronDown, ChevronUp } from 'lucide-react';
+import SEO from './SEO';
 
 interface Ingredient {
     id: number;
@@ -32,35 +33,6 @@ export const FoodCostCalculator: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     useEffect(() => {
-        document.title = 'Free Food Cost Calculator for Restaurants | Orlena';
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) {
-            metaDesc.setAttribute('content', "Calculate your restaurant's food cost percentage instantly. Find out if your menu pricing is right and how much profit you're losing per plate. Free tool.");
-        }
-
-        // Set canonical URL
-        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-        if (!canonical) {
-            canonical = document.createElement('link');
-            canonical.rel = 'canonical';
-            document.head.appendChild(canonical);
-        }
-        canonical.href = 'https://hello.orlena.talk/food-cost-calculator';
-
-        // Set OG tags
-        const setMeta = (property: string, content: string) => {
-            let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement;
-            if (!el) {
-                el = document.createElement('meta');
-                el.setAttribute('property', property);
-                document.head.appendChild(el);
-            }
-            el.content = content;
-        };
-        setMeta('og:title', "Is Your Menu Pricing Killing Your Profits? | Free Calculator");
-        setMeta('og:description', "Enter your dish ingredients and selling price. See your food cost %, profit per plate, and how you compare to the industry benchmark. Built for Indian restaurants.");
-        setMeta('og:url', 'https://hello.orlena.talk/food-cost-calculator');
-        setMeta('og:type', 'website');
 
         // FAQ Schema
         const faqSchema = {
@@ -209,6 +181,11 @@ export const FoodCostCalculator: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+              title="Food Cost Percentage Calculator | Free Tool for Cafes | Orlena"
+              description="Calculate your true food cost percentage and identify high-margin menu items. Free food cost calculator for Indian cafes and restaurants. Includes industry benchmarks."
+              canonical="https://orlena.talk/food-cost-calculator"
+            />
             <style dangerouslySetInnerHTML={{ __html: `
                 @keyframes orlena-pulse {
                     0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.5); }

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import SEO from './SEO';
 
 export const PrivacyPolicy: React.FC = () => {
     return (
         <div className="min-h-screen bg-[#FAFAFA]">
+            <SEO
+              title="Privacy Policy | Orlena"
+              description="How Orlena collects, uses, and protects customer and cafe operator data. GDPR and DPDP Act compliant."
+              canonical="https://orlena.talk/privacy"
+            />
             <Navbar />
 
             <main className="pt-32 pb-20 md:pt-40 md:pb-28 container mx-auto px-4 md:px-6 max-w-4xl">

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import SEO from './SEO';
 
 export const Integrations: React.FC = () => {
     return (
         <div className="min-h-screen bg-[#FAFAFA]">
+            <SEO
+              title="Orlena Integrations | POS Systems, Payment Gateways, QR Menus"
+              description="Orlena integrates with your existing POS, QR menu provider, and payment systems. No replacement of your current stack required. View supported integrations."
+              canonical="https://orlena.talk/integrations"
+            />
             <Navbar />
 
             <main className="pt-32 pb-20 md:pt-40 md:pb-28 container mx-auto px-4 md:px-6 max-w-4xl">

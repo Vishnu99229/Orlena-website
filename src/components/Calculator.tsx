@@ -3,6 +3,7 @@ import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { motion } from 'framer-motion';
 import { Button } from './ui/Button';
+import SEO from './SEO';
 
 const fmt = (n: number) => Math.round(n).toLocaleString('en-IN');
 
@@ -16,14 +17,7 @@ export const Calculator: React.FC = () => {
     const [whatsappError, setWhatsappError] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    useEffect(() => {
-        // Set page title and meta description for SEO
-        document.title = 'Free Restaurant Revenue Calculator India | Calculate Your Missed Upsell Revenue | Orlena';
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) {
-            metaDesc.setAttribute('content', "Free calculator for Indian cafe and restaurant owners. Enter your tables and average order value to see exactly how much revenue you're missing every month. No signup needed. Takes 30 seconds.");
-        }
-    }, []);
+
 
     useEffect(() => {
         const stored = localStorage.getItem('orlena_lead_whatsapp');
@@ -119,6 +113,11 @@ export const Calculator: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+              title="Restaurant AOV Calculator | Free Revenue Lift Estimator | Orlena"
+              description="Calculate exactly how much revenue your cafe is losing to missed upsells. Free interactive AOV calculator — see your potential revenue lift with AI upselling in 60 seconds."
+              canonical="https://orlena.talk/calculator"
+            />
             <style dangerouslySetInnerHTML={{ __html: `
                 @keyframes orlena-pulse {
                     0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.5); }

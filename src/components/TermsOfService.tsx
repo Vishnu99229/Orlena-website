@@ -1,10 +1,16 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import SEO from './SEO';
 
 export const TermsOfService: React.FC = () => {
     return (
         <div className="min-h-screen bg-[#FAFAFA]">
+            <SEO
+              title="Terms of Service | Orlena"
+              description="Terms and conditions for using Orlena's AI upselling platform."
+              canonical="https://orlena.talk/terms"
+            />
             <Navbar />
 
             <main className="pt-32 pb-20 md:pt-40 md:pb-28 container mx-auto px-4 md:px-6 max-w-4xl">
